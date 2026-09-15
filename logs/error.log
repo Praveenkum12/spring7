@@ -1,0 +1,15 @@
+{"timestamp":"2026-09-15 13:31:16.280","level":"ERROR","thread":"restartedMain","logger":"o.s.b.d.LoggingFailureAnalysisReporter","message":"
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean named 'auditorAwareImpl' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'auditorAwareImpl' in your configuration.
+"}

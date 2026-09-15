@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <!-- ========================================================= -->
+    <!-- Log directory                                              -->
+    <!-- Can be overridden with LOG_PATH environment variable      -->
+    <!-- Default: ./logs                                           -->
+    <!-- ========================================================= -->
+    <property name="LOGS" value="${LOG_PATH:-./logs}" />
+
+
+    <!-- ========================================================= -->
+    <!-- Console Appender                                           -->
+    <!-- Human-readable logs                                        -->
+    <!-- ========================================================= -->
+    <appender name="CONSOLE"
+              class="ch.qos.logback.core.ConsoleAppender">
+
+        <encoder>
+            <pattern>
+                %green(%d{HH:mm:ss.SSS}) %blue(%-5level) %red([%thread]) %yellow(%logger{15}) - %cyan(%msg%n)
+            </pattern>
+        </encoder>
+
+    </appender>
+
+
+    <!-- ========================================================= -->
+    <!-- Main Rolling File Appender                                 -->
+    <!-- INFO + WARN + ERROR                                        -->
+    <!-- ========================================================= -->
+    <appender name="ROLLING_FILE"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+
+        <!-- Active log file -->
+        <file>${LOGS}/jobportal.log</file>
+
+        <encoder>
+            <pattern>
+                {"timestamp":"%d{yyyy-MM-dd HH:mm:ss.SSS}","level":"%level","thread":"%thread","logger":"%logger{36}","message":"%msg"}%n
+            </pattern>
+        </encoder>
+
+        <!-- Size + time based rolling -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+
+            <fileNamePattern>
+                ${LOGS}/archived/jobportal-%d{yyyy-MM-dd}.%i.log
+            </fileNamePattern>
+
+            <!-- Roll after 5 MB -->
+            <maxFileSize>5MB</maxFileSize>
+
+            <!-- Keep approximately 2 days -->
+            <maxHistory>2</maxHistory>
+
+            <!-- Maximum archive storage -->
+            <totalSizeCap>100MB</totalSizeCap>
+
+        </rollingPolicy>
+
+    </appender>
+
+
+    <!-- ========================================================= -->
+    <!-- ERROR Rolling File Appender                                -->
+    <!-- ERROR only                                                 -->
+    <!-- ========================================================= -->
+    <appender name="ERROR_FILE"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+
+        <!-- Active error log -->
+        <file>${LOGS}/error.log</file>
+
+        <!-- Only ERROR and above -->
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>ERROR</level>
+        </filter>
+
+        <encoder>
+            <pattern>
+                {"timestamp":"%d{yyyy-MM-dd HH:mm:ss.SSS}","level":"%level","thread":"%thread","logger":"%logger{36}","message":"%msg"}%n
+            </pattern>
+        </encoder>
+
+        <!-- Size + time based rolling -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+
+            <fileNamePattern>
+                ${LOGS}/archived/error-%d{yyyy-MM-dd}.%i.log
+            </fileNamePattern>
+
+            <!-- Roll after 5 MB -->
+            <maxFileSize>5MB</maxFileSize>
+
+            <!-- Keep approximately 2 days -->
+            <maxHistory>2</maxHistory>
+
+            <!-- Maximum archive storage -->
+            <totalSizeCap>100MB</totalSizeCap>
+
+        </rollingPolicy>
+
+    </appender>
+
+
+    <!-- ========================================================= -->
+    <!-- Application Logger                                         -->
+    <!-- ========================================================= -->
+    <logger name="com.jimmy.jobportal"
+            level="INFO"
+            additivity="false">
+
+        <appender-ref ref="ROLLING_FILE"/>
+        <appender-ref ref="ERROR_FILE"/>
+        <appender-ref ref="CONSOLE"/>
+
+    </logger>
+
+
+    <!-- ========================================================= -->
+    <!-- Root Logger                                                -->
+    <!-- Third-party libraries                                      -->
+    <!-- ========================================================= -->
+    <root level="INFO">
+
+        <appender-ref ref="ROLLING_FILE"/>
+        <appender-ref ref="ERROR_FILE"/>
+        <appender-ref ref="CONSOLE"/>
+
+    </root>
+
+</configuration>

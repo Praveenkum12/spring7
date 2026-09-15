@@ -1,0 +1,480 @@
+{"timestamp":"2026-09-13 11:48:09.979","level":"ERROR","thread":"restartedMain","logger":"o.s.boot.SpringApplication","message":"Application run failed"}
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectingArgumentResolverBeanPostProcessor' defined in class path resource [org/springframework/data/web/config/ProjectingArgumentResolverRegistrar.class]: BeanPostProcessor before instantiation of bean failed
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:277)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:812)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:605)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.jimmy.portal.PortalApplication.main(PortalApplication.java:12)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1360)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:90)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:118)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:90)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:104)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:251)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1155)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1131)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
+	... 17 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/jimmy/portal/exception/RegistrationValidationException
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3011)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2330)
+	at org.aspectj.internal.lang.reflect.AjTypeImpl.getDeclarePrecedence(AjTypeImpl.java:1005)
+	at org.springframework.aop.aspectj.annotation.AspectMetadata.<init>(AspectMetadata.java:97)
+	at org.springframework.aop.aspectj.annotation.BeanFactoryAspectJAdvisorsBuilder.buildAspectJAdvisors(BeanFactoryAspectJAdvisorsBuilder.java:110)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:93)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:104)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:251)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1155)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1131)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
+	... 38 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.jimmy.portal.exception.RegistrationValidationException
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:502)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:560)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:123)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:502)
+	... 50 common frames omitted
+{"timestamp":"2026-09-13 11:50:21.325","level":"ERROR","thread":"http-nio-8000-exec-4","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=POST uri=/api/auth/login/public status=500 durationMs=139"}
+{"timestamp":"2026-09-13 11:51:19.155","level":"ERROR","thread":"http-nio-8000-exec-6","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=POST uri=/api/auth/login/public status=500 durationMs=53"}
+{"timestamp":"2026-09-13 11:55:58.621","level":"ERROR","thread":"http-nio-8000-exec-2","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/admin/contacts/page status=500 durationMs=90"}
+{"timestamp":"2026-09-13 11:55:58.621","level":"ERROR","thread":"http-nio-8000-exec-3","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/admin/contacts/page status=500 durationMs=90"}
+{"timestamp":"2026-09-13 12:24:36.104","level":"ERROR","thread":"restartedMain","logger":"o.s.b.d.LoggingFailureAnalysisReporter","message":"
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.jimmy.portal.aspects.RegisterValidationAspect required a bean of type 'org.springframework.security.authentication.password.CompromisedPasswordChecker' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.authentication.password.CompromisedPasswordChecker' in your configuration.
+"}
+{"timestamp":"2026-09-13 12:27:00.895","level":"ERROR","thread":"http-nio-8000-exec-4","logger":"o.a.c.c.C.[.[.[.[dispatcherServlet]","message":"Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception"}
+org.springframework.security.authentication.BadCredentialsException: Invalid Token received!
+	at com.jimmy.portal.security.filter.JwtTokenValidatorFilter.doFilterInternal(JwtTokenValidatorFilter.java:95)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1516)
+{"timestamp":"2026-09-13 12:27:47.048","level":"ERROR","thread":"http-nio-8000-exec-6","logger":"o.a.c.c.C.[.[.[.[dispatcherServlet]","message":"Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception"}
+org.springframework.security.authentication.BadCredentialsException: Invalid Token received!
+	at com.jimmy.portal.security.filter.JwtTokenValidatorFilter.doFilterInternal(JwtTokenValidatorFilter.java:95)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1516)
+{"timestamp":"2026-09-13 12:28:53.685","level":"ERROR","thread":"http-nio-8000-exec-8","logger":"o.a.c.c.C.[.[.[.[dispatcherServlet]","message":"Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception"}
+org.springframework.security.authentication.BadCredentialsException: Invalid Token received!
+	at com.jimmy.portal.security.filter.JwtTokenValidatorFilter.doFilterInternal(JwtTokenValidatorFilter.java:95)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1516)
+{"timestamp":"2026-09-13 13:33:08.224","level":"ERROR","thread":"http-nio-8000-exec-8","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/admin/contacts/page status=500 durationMs=59"}
+{"timestamp":"2026-09-13 13:33:08.224","level":"ERROR","thread":"http-nio-8000-exec-10","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/admin/contacts/page status=500 durationMs=59"}
+{"timestamp":"2026-09-13 13:36:09.314","level":"ERROR","thread":"http-nio-8000-exec-7","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/api/contacts/page/admin status=500 durationMs=75"}
+{"timestamp":"2026-09-13 13:36:09.313","level":"ERROR","thread":"http-nio-8000-exec-10","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/api/contacts/page/admin status=500 durationMs=75"}
+{"timestamp":"2026-09-13 13:40:27.357","level":"ERROR","thread":"http-nio-8000-exec-2","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=POST uri=/api/companies/public status=500 durationMs=187"}
+{"timestamp":"2026-09-13 13:42:38.618","level":"ERROR","thread":"http-nio-8000-exec-8","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"❌ Exception occurred in method: CrudRepository.save(..)"}
+{"timestamp":"2026-09-13 13:42:38.618","level":"ERROR","thread":"http-nio-8000-exec-8","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"📥 Arguments: [com.jimmy.portal.contact.entity.Contact@3d2d77fc]"}
+{"timestamp":"2026-09-13 13:42:38.618","level":"ERROR","thread":"http-nio-8000-exec-8","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"💥 Exception type: DataIntegrityViolationException"}
+{"timestamp":"2026-09-13 13:42:38.618","level":"ERROR","thread":"http-nio-8000-exec-8","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"🧾 Exception message: could not execute statement [Duplicate entry 'user@example.com' for key 'contacts.email'] [insert into contacts (created_at,created_by,email,message,name,status,subject,user_type) values (?,?,?,?,?,?,?,?)]; SQL [insert into contacts (created_at,created_by,email,message,name,status,subject,user_type) values (?,?,?,?,?,?,?,?)]; constraint [contacts.email]"}
+{"timestamp":"2026-09-13 13:42:38.618","level":"ERROR","thread":"http-nio-8000-exec-8","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"❌ Exception occurred in method: ContactServiceImpl.addContact(..)"}
+{"timestamp":"2026-09-13 13:42:38.618","level":"ERROR","thread":"http-nio-8000-exec-8","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"📥 Arguments: [com.jimmy.portal.contact.entity.Contact@3d2d77fc]"}
+{"timestamp":"2026-09-13 13:42:38.618","level":"ERROR","thread":"http-nio-8000-exec-8","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"💥 Exception type: DataIntegrityViolationException"}
+{"timestamp":"2026-09-13 13:42:38.618","level":"ERROR","thread":"http-nio-8000-exec-8","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"🧾 Exception message: could not execute statement [Duplicate entry 'user@example.com' for key 'contacts.email'] [insert into contacts (created_at,created_by,email,message,name,status,subject,user_type) values (?,?,?,?,?,?,?,?)]; SQL [insert into contacts (created_at,created_by,email,message,name,status,subject,user_type) values (?,?,?,?,?,?,?,?)]; constraint [contacts.email]"}
+{"timestamp":"2026-09-13 13:42:38.618","level":"ERROR","thread":"http-nio-8000-exec-8","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"❌ Exception occurred in method: ContactController.addContact(..)"}
+{"timestamp":"2026-09-13 13:42:38.628","level":"ERROR","thread":"http-nio-8000-exec-8","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"📥 Arguments: [ContactRequestDto[email=user@example.com, subject=string, message=string, userType=Job_Seeker, name=string]]"}
+{"timestamp":"2026-09-13 13:42:38.628","level":"ERROR","thread":"http-nio-8000-exec-8","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"💥 Exception type: DataIntegrityViolationException"}
+{"timestamp":"2026-09-13 13:42:38.632","level":"ERROR","thread":"http-nio-8000-exec-8","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"🧾 Exception message: could not execute statement [Duplicate entry 'user@example.com' for key 'contacts.email'] [insert into contacts (created_at,created_by,email,message,name,status,subject,user_type) values (?,?,?,?,?,?,?,?)]; SQL [insert into contacts (created_at,created_by,email,message,name,status,subject,user_type) values (?,?,?,?,?,?,?,?)]; constraint [contacts.email]"}
+{"timestamp":"2026-09-13 13:44:34.934","level":"ERROR","thread":"http-nio-8000-exec-3","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"❌ Exception occurred in method: CrudRepository.save(..)"}
+{"timestamp":"2026-09-13 13:44:34.936","level":"ERROR","thread":"http-nio-8000-exec-3","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"📥 Arguments: [com.jimmy.portal.contact.entity.Contact@6e3430fe]"}
+{"timestamp":"2026-09-13 13:44:34.937","level":"ERROR","thread":"http-nio-8000-exec-3","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"💥 Exception type: DataIntegrityViolationException"}
+{"timestamp":"2026-09-13 13:44:34.938","level":"ERROR","thread":"http-nio-8000-exec-3","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"🧾 Exception message: could not execute statement [Duplicate entry 'dino@example.com' for key 'contacts.email'] [insert into contacts (created_at,created_by,email,message,name,status,subject,user_type) values (?,?,?,?,?,?,?,?)]; SQL [insert into contacts (created_at,created_by,email,message,name,status,subject,user_type) values (?,?,?,?,?,?,?,?)]; constraint [contacts.email]"}
+{"timestamp":"2026-09-13 13:44:34.939","level":"ERROR","thread":"http-nio-8000-exec-3","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"❌ Exception occurred in method: ContactServiceImpl.addContact(..)"}
+{"timestamp":"2026-09-13 13:44:34.940","level":"ERROR","thread":"http-nio-8000-exec-3","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"📥 Arguments: [com.jimmy.portal.contact.entity.Contact@6e3430fe]"}
+{"timestamp":"2026-09-13 13:44:34.940","level":"ERROR","thread":"http-nio-8000-exec-3","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"💥 Exception type: DataIntegrityViolationException"}
+{"timestamp":"2026-09-13 13:44:34.940","level":"ERROR","thread":"http-nio-8000-exec-3","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"🧾 Exception message: could not execute statement [Duplicate entry 'dino@example.com' for key 'contacts.email'] [insert into contacts (created_at,created_by,email,message,name,status,subject,user_type) values (?,?,?,?,?,?,?,?)]; SQL [insert into contacts (created_at,created_by,email,message,name,status,subject,user_type) values (?,?,?,?,?,?,?,?)]; constraint [contacts.email]"}
+{"timestamp":"2026-09-13 13:44:34.940","level":"ERROR","thread":"http-nio-8000-exec-3","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"❌ Exception occurred in method: ContactController.addContact(..)"}
+{"timestamp":"2026-09-13 13:44:34.940","level":"ERROR","thread":"http-nio-8000-exec-3","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"📥 Arguments: [ContactRequestDto[email=dino@example.com, subject=string, message=string, userType=Job_Seeker, name=string]]"}
+{"timestamp":"2026-09-13 13:44:34.942","level":"ERROR","thread":"http-nio-8000-exec-3","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"💥 Exception type: DataIntegrityViolationException"}
+{"timestamp":"2026-09-13 13:44:34.942","level":"ERROR","thread":"http-nio-8000-exec-3","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"🧾 Exception message: could not execute statement [Duplicate entry 'dino@example.com' for key 'contacts.email'] [insert into contacts (created_at,created_by,email,message,name,status,subject,user_type) values (?,?,?,?,?,?,?,?)]; SQL [insert into contacts (created_at,created_by,email,message,name,status,subject,user_type) values (?,?,?,?,?,?,?,?)]; constraint [contacts.email]"}
+{"timestamp":"2026-09-13 15:07:10.390","level":"ERROR","thread":"http-nio-8000-exec-2","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"❌ Exception occurred in method: CrudRepository.save(..)"}
+{"timestamp":"2026-09-13 15:07:10.428","level":"ERROR","thread":"http-nio-8000-exec-2","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"📥 Arguments: [com.jimmy.portal.contact.entity.Contact@6248bc5c]"}
+{"timestamp":"2026-09-13 15:07:10.428","level":"ERROR","thread":"http-nio-8000-exec-2","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"💥 Exception type: TransactionSystemException"}
+{"timestamp":"2026-09-13 15:07:10.428","level":"ERROR","thread":"http-nio-8000-exec-2","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"🧾 Exception message: Could not commit JPA transaction"}
+{"timestamp":"2026-09-13 15:07:10.428","level":"ERROR","thread":"http-nio-8000-exec-2","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"❌ Exception occurred in method: ContactServiceImpl.closeContactMsg(..)"}
+{"timestamp":"2026-09-13 15:07:10.428","level":"ERROR","thread":"http-nio-8000-exec-2","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"📥 Arguments: [1, CLOSED]"}
+{"timestamp":"2026-09-13 15:07:10.428","level":"ERROR","thread":"http-nio-8000-exec-2","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"💥 Exception type: TransactionSystemException"}
+{"timestamp":"2026-09-13 15:07:10.428","level":"ERROR","thread":"http-nio-8000-exec-2","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"🧾 Exception message: Could not commit JPA transaction"}
+{"timestamp":"2026-09-13 15:07:10.428","level":"ERROR","thread":"http-nio-8000-exec-2","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"❌ Exception occurred in method: ContactController.closeContactMsg(..)"}
+{"timestamp":"2026-09-13 15:07:10.428","level":"ERROR","thread":"http-nio-8000-exec-2","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"📥 Arguments: [1]"}
+{"timestamp":"2026-09-13 15:07:10.428","level":"ERROR","thread":"http-nio-8000-exec-2","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"💥 Exception type: TransactionSystemException"}
+{"timestamp":"2026-09-13 15:07:10.428","level":"ERROR","thread":"http-nio-8000-exec-2","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"🧾 Exception message: Could not commit JPA transaction"}
+{"timestamp":"2026-09-13 15:07:10.477","level":"ERROR","thread":"http-nio-8000-exec-2","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=PATCH uri=/api/contacts/1/status/admin status=500 durationMs=1744"}
+{"timestamp":"2026-09-13 15:09:15.757","level":"ERROR","thread":"http-nio-8000-exec-4","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"❌ Exception occurred in method: CrudRepository.save(..)"}
+{"timestamp":"2026-09-13 15:09:15.767","level":"ERROR","thread":"http-nio-8000-exec-4","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"📥 Arguments: [com.jimmy.portal.contact.entity.Contact@772644ca]"}
+{"timestamp":"2026-09-13 15:09:15.767","level":"ERROR","thread":"http-nio-8000-exec-4","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"💥 Exception type: TransactionSystemException"}
+{"timestamp":"2026-09-13 15:09:15.767","level":"ERROR","thread":"http-nio-8000-exec-4","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"🧾 Exception message: Could not commit JPA transaction"}
+{"timestamp":"2026-09-13 15:09:15.767","level":"ERROR","thread":"http-nio-8000-exec-4","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"❌ Exception occurred in method: ContactServiceImpl.closeContactMsg(..)"}
+{"timestamp":"2026-09-13 15:09:15.769","level":"ERROR","thread":"http-nio-8000-exec-4","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"📥 Arguments: [1, CLOSED]"}
+{"timestamp":"2026-09-13 15:09:15.769","level":"ERROR","thread":"http-nio-8000-exec-4","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"💥 Exception type: TransactionSystemException"}
+{"timestamp":"2026-09-13 15:09:15.769","level":"ERROR","thread":"http-nio-8000-exec-4","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"🧾 Exception message: Could not commit JPA transaction"}
+{"timestamp":"2026-09-13 15:09:15.769","level":"ERROR","thread":"http-nio-8000-exec-4","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"❌ Exception occurred in method: ContactController.closeContactMsg(..)"}
+{"timestamp":"2026-09-13 15:09:15.769","level":"ERROR","thread":"http-nio-8000-exec-4","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"📥 Arguments: [1]"}
+{"timestamp":"2026-09-13 15:09:15.769","level":"ERROR","thread":"http-nio-8000-exec-4","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"💥 Exception type: TransactionSystemException"}
+{"timestamp":"2026-09-13 15:09:15.769","level":"ERROR","thread":"http-nio-8000-exec-4","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"🧾 Exception message: Could not commit JPA transaction"}
+{"timestamp":"2026-09-13 15:09:15.868","level":"ERROR","thread":"http-nio-8000-exec-4","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=PATCH uri=/api/contacts/1/status/admin status=500 durationMs=640"}
+{"timestamp":"2026-09-13 15:12:08.660","level":"ERROR","thread":"http-nio-8000-exec-1","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"❌ Exception occurred in method: CrudRepository.save(..)"}
+{"timestamp":"2026-09-13 15:12:08.977","level":"ERROR","thread":"http-nio-8000-exec-1","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"📥 Arguments: [com.jimmy.portal.contact.entity.Contact@1fbe9389]"}
+{"timestamp":"2026-09-13 15:12:08.978","level":"ERROR","thread":"http-nio-8000-exec-1","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"💥 Exception type: TransactionSystemException"}
+{"timestamp":"2026-09-13 15:12:08.978","level":"ERROR","thread":"http-nio-8000-exec-1","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"🧾 Exception message: Could not commit JPA transaction"}
+{"timestamp":"2026-09-13 15:12:08.981","level":"ERROR","thread":"http-nio-8000-exec-1","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"❌ Exception occurred in method: ContactServiceImpl.closeContactMsg(..)"}
+{"timestamp":"2026-09-13 15:12:08.981","level":"ERROR","thread":"http-nio-8000-exec-1","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"📥 Arguments: [5, CLOSED]"}
+{"timestamp":"2026-09-13 15:12:08.981","level":"ERROR","thread":"http-nio-8000-exec-1","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"💥 Exception type: TransactionSystemException"}
+{"timestamp":"2026-09-13 15:12:08.981","level":"ERROR","thread":"http-nio-8000-exec-1","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"🧾 Exception message: Could not commit JPA transaction"}
+{"timestamp":"2026-09-13 15:12:08.983","level":"ERROR","thread":"http-nio-8000-exec-1","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"❌ Exception occurred in method: ContactController.closeContactMsg(..)"}
+{"timestamp":"2026-09-13 15:12:08.984","level":"ERROR","thread":"http-nio-8000-exec-1","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"📥 Arguments: [5]"}
+{"timestamp":"2026-09-13 15:12:08.984","level":"ERROR","thread":"http-nio-8000-exec-1","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"💥 Exception type: TransactionSystemException"}
+{"timestamp":"2026-09-13 15:12:08.984","level":"ERROR","thread":"http-nio-8000-exec-1","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"🧾 Exception message: Could not commit JPA transaction"}
+{"timestamp":"2026-09-13 15:12:09.067","level":"ERROR","thread":"http-nio-8000-exec-1","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=PATCH uri=/api/contacts/5/status/admin status=500 durationMs=887"}
+{"timestamp":"2026-09-13 15:19:43.700","level":"ERROR","thread":"restartedMain","logger":"o.s.boot.SpringApplication","message":"Application run failed"}
+java.lang.TypeNotPresentException: Type com.jimmy.portal.contact.entity.Contact not present
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:120)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.repository.ClassRepository.computeSuperInterfaces(ClassRepository.java:117)
+	at java.base/sun.reflect.generics.repository.ClassRepository.getSuperInterfaces(ClassRepository.java:95)
+	at java.base/java.lang.Class.getGenericInterfaces(Class.java:1288)
+	at org.springframework.core.ResolvableType.getInterfaces(ResolvableType.java:544)
+	at org.springframework.core.ResolvableType.as(ResolvableType.java:492)
+	at org.springframework.data.core.TypeDiscoverer.getSuperTypeInformation(TypeDiscoverer.java:266)
+	at org.springframework.data.core.TypeInformation.getRequiredSuperTypeInformation(TypeInformation.java:328)
+	at org.springframework.data.repository.core.support.DefaultRepositoryMetadata.<init>(DefaultRepositoryMetadata.java:55)
+	at org.springframework.data.repository.core.support.AbstractRepositoryMetadata.getMetadata(AbstractRepositoryMetadata.java:79)
+	at org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport.getRepositoryConfigurations(RepositoryConfigurationExtensionSupport.java:93)
+	at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:170)
+	at org.springframework.boot.autoconfigure.data.AbstractRepositoryConfigurationSourceSupport.registerBeanDefinitions(AbstractRepositoryConfigurationSourceSupport.java:67)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromImportBeanDefinitionRegistrars$0(ConfigurationClassBeanDefinitionReader.java:422)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:987)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromImportBeanDefinitionRegistrars(ConfigurationClassBeanDefinitionReader.java:421)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:152)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:124)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:464)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:316)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:795)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:603)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.jimmy.portal.PortalApplication.main(PortalApplication.java:12)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52)
+Caused by: java.lang.ClassNotFoundException: com.jimmy.portal.contact.entity.Contact
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:502)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:560)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:123)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:502)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:560)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117)
+	... 38 common frames omitted
+{"timestamp":"2026-09-13 15:34:29.835","level":"ERROR","thread":"http-nio-8000-exec-6","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/profile status=500 durationMs=52"}
+{"timestamp":"2026-09-13 15:34:30.320","level":"ERROR","thread":"http-nio-8000-exec-9","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/job-applications/my-applications status=500 durationMs=107"}
+{"timestamp":"2026-09-13 15:34:30.320","level":"ERROR","thread":"http-nio-8000-exec-10","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/saved-jobs status=500 durationMs=108"}
+{"timestamp":"2026-09-13 15:34:37.374","level":"ERROR","thread":"http-nio-8000-exec-3","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/profile status=500 durationMs=67"}
+{"timestamp":"2026-09-13 15:34:37.379","level":"ERROR","thread":"http-nio-8000-exec-4","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/profile status=500 durationMs=48"}
+{"timestamp":"2026-09-13 15:46:14.079","level":"ERROR","thread":"restartedMain","logger":"o.s.b.d.LoggingFailureAnalysisReporter","message":"
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.jimmy.portal.contact.controller.ContactController required a bean of type 'com.jimmy.portal.contact.service.IContactService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.jimmy.portal.contact.service.IContactService' in your configuration.
+"}
+{"timestamp":"2026-09-13 15:47:04.865","level":"ERROR","thread":"restartedMain","logger":"o.s.b.d.LoggingFailureAnalysisReporter","message":"
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.jimmy.portal.contact.controller.ContactController required a bean of type 'com.jimmy.portal.contact.service.IContactService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.jimmy.portal.contact.service.IContactService' in your configuration.
+"}
+{"timestamp":"2026-09-13 15:56:04.828","level":"ERROR","thread":"http-nio-8000-exec-2","logger":"o.a.c.c.C.[.[.[.[dispatcherServlet]","message":"Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception"}
+org.springframework.security.authentication.BadCredentialsException: Invalid Token received!
+	at com.jimmy.portal.security.filter.JwtTokenValidatorFilter.doFilterInternal(JwtTokenValidatorFilter.java:95)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1516)
+{"timestamp":"2026-09-13 15:57:29.679","level":"ERROR","thread":"http-nio-8000-exec-7","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"❌ Exception occurred in method: JobPortalUsernamePwdAuthenticationProvider.authenticate(..)"}
+{"timestamp":"2026-09-13 15:57:29.682","level":"ERROR","thread":"http-nio-8000-exec-7","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"📥 Arguments: [UsernamePasswordAuthenticationToken [Principal=df@gmail.com, Credentials=[PROTECTED], Authenticated=false, Details=null, Granted Authorities=[]]]"}
+{"timestamp":"2026-09-13 15:57:29.682","level":"ERROR","thread":"http-nio-8000-exec-7","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"💥 Exception type: UsernameNotFoundException"}
+{"timestamp":"2026-09-13 15:57:29.682","level":"ERROR","thread":"http-nio-8000-exec-7","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"🧾 Exception message: User details not found for the user: df@gmail.com"}
