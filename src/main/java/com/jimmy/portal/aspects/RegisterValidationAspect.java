@@ -39,6 +39,7 @@ public class RegisterValidationAspect {
         // 1️⃣ Compromised password check
         CompromisedPasswordDecision decision =
                 compromisedPasswordChecker.check(request.password());
+
         if (decision.isCompromised()) {
             errors.put("password", "Choose a strong password");
         }

@@ -3,10 +3,16 @@ package com.jimmy.portal.company.mapper;
 import com.jimmy.portal.company.dto.CompanyDto;
 import com.jimmy.portal.company.entity.Company;
 import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
 
 @Mapper(componentModel = "spring", uses = JobMapper.class)
 public interface CompanyMapper {
 
     CompanyDto toDto(Company company);
+
+    @Mapping(target = "jobs", ignore = true)
+    CompanyDto companyToDtoWithJobListNull(Company company);
+
+    Company toEntity(CompanyDto companyDto);
 
 }

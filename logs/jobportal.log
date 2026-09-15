@@ -190,3 +190,709 @@ Consider defining a bean named 'auditorAwareImpl' in your configuration.
 {"timestamp":"2026-09-15 13:31:30.772","level":"WARN","thread":"restartedMain","logger":"o.s.c.events.SpringDocAppInitializer","message":"SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'"}
 {"timestamp":"2026-09-15 13:31:30.773","level":"WARN","thread":"restartedMain","logger":"o.s.c.events.SpringDocAppInitializer","message":"SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'"}
 {"timestamp":"2026-09-15 13:31:30.775","level":"INFO","thread":"restartedMain","logger":"o.s.b.d.a.ConditionEvaluationDeltaLoggingListener","message":"Condition evaluation unchanged"}
+{"timestamp":"2026-09-15 13:47:41.650","level":"INFO","thread":"http-nio-8000-exec-1","logger":"o.a.c.c.C.[Tomcat-1].[localhost].[/]","message":"Initializing Spring DispatcherServlet 'dispatcherServlet'"}
+{"timestamp":"2026-09-15 13:47:42.011","level":"INFO","thread":"http-nio-8000-exec-1","logger":"o.s.web.servlet.DispatcherServlet","message":"Initializing Servlet 'dispatcherServlet'"}
+{"timestamp":"2026-09-15 13:47:42.283","level":"INFO","thread":"http-nio-8000-exec-1","logger":"o.s.web.servlet.DispatcherServlet","message":"Completed initialization in 251 ms"}
+{"timestamp":"2026-09-15 13:47:43.074","level":"INFO","thread":"http-nio-8000-exec-1","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=POST uri=/api/auth/login/public"}
+{"timestamp":"2026-09-15 13:47:57.901","level":"ERROR","thread":"http-nio-8000-exec-1","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"❌ Exception occurred in method: JobPortalUsernamePwdAuthenticationProvider.authenticate(..)"}
+{"timestamp":"2026-09-15 13:47:57.904","level":"ERROR","thread":"http-nio-8000-exec-1","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"📥 Arguments: [UsernamePasswordAuthenticationToken [Principal=df@gmail.com, Credentials=[PROTECTED], Authenticated=false, Details=null, Granted Authorities=[]]]"}
+{"timestamp":"2026-09-15 13:47:57.910","level":"ERROR","thread":"http-nio-8000-exec-1","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"💥 Exception type: UsernameNotFoundException"}
+{"timestamp":"2026-09-15 13:47:57.911","level":"ERROR","thread":"http-nio-8000-exec-1","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"🧾 Exception message: User details not found for the user: df@gmail.com"}
+{"timestamp":"2026-09-15 13:48:02.916","level":"INFO","thread":"http-nio-8000-exec-1","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_BODY payload={"username":"df@gmail.com","password":"*****"}"}
+{"timestamp":"2026-09-15 13:48:02.939","level":"WARN","thread":"http-nio-8000-exec-1","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=POST uri=/api/auth/login/public status=401 durationMs=19884"}
+{"timestamp":"2026-09-15 14:47:27.262","level":"WARN","thread":"HikariPool-4:housekeeper","logger":"com.zaxxer.hikari.pool.HikariPool","message":"HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=2m28s36ms127µs300ns)."}
+{"timestamp":"2026-09-15 14:56:28.991","level":"INFO","thread":"File Watcher","logger":"o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener","message":"Restarting due to 6 class path changes (0 additions, 6 deletions, 0 modifications)"}
+{"timestamp":"2026-09-15 14:56:29.078","level":"INFO","thread":"Thread-33","logger":"o.s.boot.tomcat.GracefulShutdown","message":"Commencing graceful shutdown. Waiting for active requests to complete"}
+{"timestamp":"2026-09-15 14:56:29.105","level":"INFO","thread":"tomcat-shutdown","logger":"o.a.coyote.http11.Http11NioProtocol","message":"Pausing ProtocolHandler ["http-nio-8000"]"}
+{"timestamp":"2026-09-15 14:56:29.144","level":"INFO","thread":"tomcat-shutdown","logger":"o.s.boot.tomcat.GracefulShutdown","message":"Graceful shutdown complete"}
+{"timestamp":"2026-09-15 14:56:29.152","level":"INFO","thread":"Thread-33","logger":"o.a.coyote.http11.Http11NioProtocol","message":"Stopping ProtocolHandler ["http-nio-8000"]"}
+{"timestamp":"2026-09-15 14:56:29.220","level":"INFO","thread":"Thread-33","logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean","message":"Closing JPA EntityManagerFactory for persistence unit 'default'"}
+{"timestamp":"2026-09-15 14:56:29.289","level":"INFO","thread":"Thread-33","logger":"com.zaxxer.hikari.HikariDataSource","message":"HikariPool-4 - Shutdown initiated..."}
+{"timestamp":"2026-09-15 14:56:29.304","level":"INFO","thread":"Thread-33","logger":"com.zaxxer.hikari.HikariDataSource","message":"HikariPool-4 - Shutdown completed."}
+{"timestamp":"2026-09-15 14:56:30.929","level":"INFO","thread":"restartedMain","logger":"com.jimmy.portal.PortalApplication","message":"Starting PortalApplication using Java 26.0.2.1 with PID 11740 (D:\job-portal-server\target\classes started by JIMMY in D:\job-portal-server)"}
+{"timestamp":"2026-09-15 14:56:30.930","level":"INFO","thread":"restartedMain","logger":"com.jimmy.portal.PortalApplication","message":"No active profile set, falling back to 1 default profile: "default""}
+{"timestamp":"2026-09-15 14:56:30.951","level":"INFO","thread":"restartedMain","logger":"o.s.b.d.c.l.DockerComposeLifecycleManager","message":"Using Docker Compose file D:\job-portal-server\compose.yml"}
+{"timestamp":"2026-09-15 14:56:32.353","level":"INFO","thread":"restartedMain","logger":"o.s.b.d.c.l.DockerComposeLifecycleManager","message":"There are already Docker Compose services running, skipping startup"}
+{"timestamp":"2026-09-15 14:56:32.766","level":"WARN","thread":"restartedMain","logger":"o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext","message":"Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: I/O failure while processing configuration class [com.jimmy.portal.company.mapper.CompanyMapperImpl]"}
+{"timestamp":"2026-09-15 14:56:32.778","level":"ERROR","thread":"restartedMain","logger":"o.s.boot.SpringApplication","message":"Application run failed"}
+org.springframework.beans.factory.BeanDefinitionStoreException: I/O failure while processing configuration class [com.jimmy.portal.company.mapper.CompanyMapperImpl]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:290)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:220)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:357)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:285)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:206)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:174)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:452)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:316)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:795)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:603)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.jimmy.portal.PortalApplication.main(PortalApplication.java:12)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52)
+Caused by: java.io.FileNotFoundException: class path resource [com/jimmy/portal/company/mapper/CompanyMapper.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:212)
+	at org.springframework.core.type.classreading.ClassFileMetadataReader.parseClassModel(ClassFileMetadataReader.java:49)
+	at org.springframework.core.type.classreading.ClassFileMetadataReader.<init>(ClassFileMetadataReader.java:45)
+	at org.springframework.core.type.classreading.ClassFileMetadataReaderFactory.getMetadataReader(ClassFileMetadataReaderFactory.java:62)
+	at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:127)
+	at org.springframework.core.type.classreading.AbstractMetadataReaderFactory.getMetadataReader(AbstractMetadataReaderFactory.java:62)
+	at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:40)
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:730)
+	at org.springframework.context.annotation.ConfigurationClassParser$SourceClass.getInterfaces(ConfigurationClassParser.java:1076)
+	at org.springframework.context.annotation.ConfigurationClassParser.collectImports(ConfigurationClassParser.java:568)
+	at org.springframework.context.annotation.ConfigurationClassParser.getImports(ConfigurationClassParser.java:543)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:364)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:285)
+	... 21 common frames omitted
+{"timestamp":"2026-09-15 14:56:39.612","level":"INFO","thread":"restartedMain","logger":"com.jimmy.portal.PortalApplication","message":"Starting PortalApplication using Java 26.0.2.1 with PID 11740 (D:\job-portal-server\target\classes started by JIMMY in D:\job-portal-server)"}
+{"timestamp":"2026-09-15 14:56:39.614","level":"INFO","thread":"restartedMain","logger":"com.jimmy.portal.PortalApplication","message":"No active profile set, falling back to 1 default profile: "default""}
+{"timestamp":"2026-09-15 14:56:39.631","level":"INFO","thread":"restartedMain","logger":"o.s.b.d.c.l.DockerComposeLifecycleManager","message":"Using Docker Compose file D:\job-portal-server\compose.yml"}
+{"timestamp":"2026-09-15 14:56:41.044","level":"INFO","thread":"restartedMain","logger":"o.s.b.d.c.l.DockerComposeLifecycleManager","message":"There are already Docker Compose services running, skipping startup"}
+{"timestamp":"2026-09-15 14:56:42.343","level":"INFO","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode."}
+{"timestamp":"2026-09-15 14:56:42.418","level":"INFO","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","message":"Finished Spring Data repository scanning in 69 ms. Found 4 JPA repository interfaces."}
+{"timestamp":"2026-09-15 14:56:43.165","level":"INFO","thread":"restartedMain","logger":"o.s.boot.tomcat.TomcatWebServer","message":"Tomcat initialized with port 8000 (http)"}
+{"timestamp":"2026-09-15 14:56:43.171","level":"INFO","thread":"restartedMain","logger":"o.a.coyote.http11.Http11NioProtocol","message":"Initializing ProtocolHandler ["http-nio-8000"]"}
+{"timestamp":"2026-09-15 14:56:43.172","level":"INFO","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","message":"Starting service [Tomcat]"}
+{"timestamp":"2026-09-15 14:56:43.173","level":"INFO","thread":"restartedMain","logger":"o.a.catalina.core.StandardEngine","message":"Starting Servlet engine: [Apache Tomcat/11.0.22]"}
+{"timestamp":"2026-09-15 14:56:43.291","level":"INFO","thread":"restartedMain","logger":"o.s.b.w.c.s.WebApplicationContextInitializer","message":"Root WebApplicationContext: initialization completed in 2246 ms"}
+{"timestamp":"2026-09-15 14:56:43.686","level":"INFO","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","message":"HikariPool-5 - Starting..."}
+{"timestamp":"2026-09-15 14:56:43.751","level":"INFO","thread":"restartedMain","logger":"com.zaxxer.hikari.pool.HikariPool","message":"HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6a6a107a"}
+{"timestamp":"2026-09-15 14:56:43.752","level":"INFO","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","message":"HikariPool-5 - Start completed."}
+{"timestamp":"2026-09-15 14:56:43.758","level":"INFO","thread":"restartedMain","logger":"org.hibernate.orm.jpa","message":"HHH008540: Processing PersistenceUnitInfo [name: default]"}
+{"timestamp":"2026-09-15 14:56:43.837","level":"INFO","thread":"restartedMain","logger":"o.s.o.j.p.SpringPersistenceUnitInfo","message":"No LoadTimeWeaver setup: ignoring JPA class transformer"}
+{"timestamp":"2026-09-15 14:56:43.852","level":"INFO","thread":"restartedMain","logger":"o.hibernate.orm.connections.pooling","message":"HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://127.0.0.1:3308/jobportal]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.1
+	Default catalog/schema: jobportal/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown"}
+{"timestamp":"2026-09-15 14:56:44.468","level":"INFO","thread":"restartedMain","logger":"org.hibernate.orm.core","message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)"}
+{"timestamp":"2026-09-15 14:56:44.472","level":"INFO","thread":"restartedMain","logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean","message":"Initialized JPA EntityManagerFactory for persistence unit 'default'"}
+{"timestamp":"2026-09-15 14:56:46.167","level":"WARN","thread":"restartedMain","logger":"o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration","message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning"}
+{"timestamp":"2026-09-15 14:56:46.315","level":"INFO","thread":"restartedMain","logger":"o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer","message":"Global AuthenticationManager configured with AuthenticationProvider bean with name jobPortalUsernamePwdAuthenticationProvider"}
+{"timestamp":"2026-09-15 14:56:47.092","level":"INFO","thread":"restartedMain","logger":"o.a.coyote.http11.Http11NioProtocol","message":"Starting ProtocolHandler ["http-nio-8000"]"}
+{"timestamp":"2026-09-15 14:56:47.099","level":"INFO","thread":"restartedMain","logger":"o.s.boot.tomcat.TomcatWebServer","message":"Tomcat started on port 8000 (http) with context path '/'"}
+{"timestamp":"2026-09-15 14:56:47.106","level":"INFO","thread":"restartedMain","logger":"com.jimmy.portal.PortalApplication","message":"Started PortalApplication in 7.769 seconds (process running for 7207.608)"}
+{"timestamp":"2026-09-15 14:56:47.108","level":"WARN","thread":"restartedMain","logger":"o.s.c.events.SpringDocAppInitializer","message":"SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'"}
+{"timestamp":"2026-09-15 14:56:47.109","level":"WARN","thread":"restartedMain","logger":"o.s.c.events.SpringDocAppInitializer","message":"SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'"}
+{"timestamp":"2026-09-15 14:56:47.109","level":"INFO","thread":"restartedMain","logger":"o.s.b.d.a.ConditionEvaluationDeltaLoggingListener","message":"Condition evaluation unchanged"}
+{"timestamp":"2026-09-15 15:26:51.873","level":"WARN","thread":"HikariPool-5:housekeeper","logger":"com.zaxxer.hikari.pool.HikariPool","message":"HikariPool-5 - Thread starvation or clock leap detected (housekeeper delta=11m37s793ms166µs100ns)."}
+{"timestamp":"2026-09-15 16:09:05.069","level":"WARN","thread":"HikariPool-5:housekeeper","logger":"com.zaxxer.hikari.pool.HikariPool","message":"HikariPool-5 - Thread starvation or clock leap detected (housekeeper delta=30m12s156ms500µs900ns)."}
+{"timestamp":"2026-09-15 19:04:59.038","level":"WARN","thread":"HikariPool-5:housekeeper","logger":"com.zaxxer.hikari.pool.HikariPool","message":"HikariPool-5 - Thread starvation or clock leap detected (housekeeper delta=2h56m1s264ms572µs900ns)."}
+{"timestamp":"2026-09-15 19:07:54.083","level":"INFO","thread":"http-nio-8000-exec-2","logger":"o.a.c.c.C.[Tomcat-1].[localhost].[/]","message":"Initializing Spring DispatcherServlet 'dispatcherServlet'"}
+{"timestamp":"2026-09-15 19:07:54.204","level":"INFO","thread":"http-nio-8000-exec-2","logger":"o.s.web.servlet.DispatcherServlet","message":"Initializing Servlet 'dispatcherServlet'"}
+{"timestamp":"2026-09-15 19:07:55.541","level":"INFO","thread":"http-nio-8000-exec-2","logger":"o.s.web.servlet.DispatcherServlet","message":"Completed initialization in 1324 ms"}
+{"timestamp":"2026-09-15 19:07:56.530","level":"INFO","thread":"http-nio-8000-exec-2","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/public"}
+{"timestamp":"2026-09-15 19:08:05.326","level":"INFO","thread":"http-nio-8000-exec-3","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/public"}
+{"timestamp":"2026-09-15 19:08:05.626","level":"INFO","thread":"http-nio-8000-exec-2","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/public status=200 durationMs=9091"}
+{"timestamp":"2026-09-15 19:08:05.994","level":"INFO","thread":"http-nio-8000-exec-3","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/public status=200 durationMs=665"}
+{"timestamp":"2026-09-15 19:08:49.660","level":"INFO","thread":"http-nio-8000-exec-1","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=POST uri=/api/auth/register/public"}
+{"timestamp":"2026-09-15 19:08:49.868","level":"INFO","thread":"http-nio-8000-exec-1","logger":"c.j.p.a.RegisterValidationAspect","message":"🔍 Validating user registration request"}
+{"timestamp":"2026-09-15 19:08:52.484","level":"WARN","thread":"http-nio-8000-exec-1","logger":"c.j.p.a.RegisterValidationAspect","message":"❌ Registration validation failed: {password=Choose a strong password}"}
+{"timestamp":"2026-09-15 19:08:52.487","level":"ERROR","thread":"http-nio-8000-exec-1","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"❌ Exception occurred in method: AuthController.registerUser(..)"}
+{"timestamp":"2026-09-15 19:08:52.798","level":"ERROR","thread":"http-nio-8000-exec-1","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"📥 Arguments: [RegisterRequestDto[name=Sanjay, email=testing@gmai.com, mobileNumber=9483905234, password=test@123]]"}
+{"timestamp":"2026-09-15 19:08:52.798","level":"ERROR","thread":"http-nio-8000-exec-1","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"💥 Exception type: RegistrationValidationException"}
+{"timestamp":"2026-09-15 19:08:52.798","level":"ERROR","thread":"http-nio-8000-exec-1","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"🧾 Exception message: Registration validation failed"}
+{"timestamp":"2026-09-15 19:08:52.911","level":"WARN","thread":"http-nio-8000-exec-1","logger":"o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver","message":"Resolved [com.jimmy.portal.exception.RegistrationValidationException: Registration validation failed]"}
+{"timestamp":"2026-09-15 19:08:52.950","level":"INFO","thread":"http-nio-8000-exec-1","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_BODY payload={"name":"Sanjay","email":"testing@gmai.com","mobileNumber":"9483905234","password":"*****"}"}
+{"timestamp":"2026-09-15 19:08:52.953","level":"ERROR","thread":"http-nio-8000-exec-1","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=POST uri=/api/auth/register/public status=500 durationMs=3292"}
+{"timestamp":"2026-09-15 19:09:10.029","level":"INFO","thread":"http-nio-8000-exec-7","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=POST uri=/api/auth/register/public"}
+{"timestamp":"2026-09-15 19:09:10.042","level":"INFO","thread":"http-nio-8000-exec-7","logger":"c.j.p.a.RegisterValidationAspect","message":"🔍 Validating user registration request"}
+{"timestamp":"2026-09-15 19:09:10.206","level":"WARN","thread":"http-nio-8000-exec-7","logger":"c.j.p.a.RegisterValidationAspect","message":"❌ Registration validation failed: {password=Choose a strong password}"}
+{"timestamp":"2026-09-15 19:09:10.208","level":"ERROR","thread":"http-nio-8000-exec-7","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"❌ Exception occurred in method: AuthController.registerUser(..)"}
+{"timestamp":"2026-09-15 19:09:10.209","level":"ERROR","thread":"http-nio-8000-exec-7","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"📥 Arguments: [RegisterRequestDto[name=Sanjay, email=testing@gmai.com, mobileNumber=9483905234, password=test@123]]"}
+{"timestamp":"2026-09-15 19:09:10.209","level":"ERROR","thread":"http-nio-8000-exec-7","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"💥 Exception type: RegistrationValidationException"}
+{"timestamp":"2026-09-15 19:09:10.211","level":"ERROR","thread":"http-nio-8000-exec-7","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"🧾 Exception message: Registration validation failed"}
+{"timestamp":"2026-09-15 19:09:10.228","level":"WARN","thread":"http-nio-8000-exec-7","logger":"o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver","message":"Resolved [com.jimmy.portal.exception.RegistrationValidationException: Registration validation failed]"}
+{"timestamp":"2026-09-15 19:09:10.232","level":"INFO","thread":"http-nio-8000-exec-7","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_BODY payload={"name":"Sanjay","email":"testing@gmai.com","mobileNumber":"9483905234","password":"*****"}"}
+{"timestamp":"2026-09-15 19:09:10.232","level":"ERROR","thread":"http-nio-8000-exec-7","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=POST uri=/api/auth/register/public status=500 durationMs=202"}
+{"timestamp":"2026-09-15 19:11:01.964","level":"INFO","thread":"http-nio-8000-exec-8","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=POST uri=/api/auth/register/public"}
+{"timestamp":"2026-09-15 19:11:02.032","level":"INFO","thread":"http-nio-8000-exec-8","logger":"c.j.p.a.RegisterValidationAspect","message":"🔍 Validating user registration request"}
+{"timestamp":"2026-09-15 19:11:03.158","level":"WARN","thread":"http-nio-8000-exec-8","logger":"c.j.p.a.RegisterValidationAspect","message":"❌ Registration validation failed: {password=Choose a strong password}"}
+{"timestamp":"2026-09-15 19:11:03.163","level":"ERROR","thread":"http-nio-8000-exec-8","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"❌ Exception occurred in method: AuthController.registerUser(..)"}
+{"timestamp":"2026-09-15 19:11:03.167","level":"ERROR","thread":"http-nio-8000-exec-8","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"📥 Arguments: [RegisterRequestDto[name=Sanjay, email=testing@gmai.com, mobileNumber=9483905234, password=testing@123]]"}
+{"timestamp":"2026-09-15 19:11:03.172","level":"ERROR","thread":"http-nio-8000-exec-8","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"💥 Exception type: RegistrationValidationException"}
+{"timestamp":"2026-09-15 19:11:03.172","level":"ERROR","thread":"http-nio-8000-exec-8","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"🧾 Exception message: Registration validation failed"}
+{"timestamp":"2026-09-15 19:11:03.231","level":"WARN","thread":"http-nio-8000-exec-8","logger":"o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver","message":"Resolved [com.jimmy.portal.exception.RegistrationValidationException: Registration validation failed]"}
+{"timestamp":"2026-09-15 19:11:03.400","level":"INFO","thread":"http-nio-8000-exec-8","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_BODY payload={"name":"Sanjay","email":"testing@gmai.com","mobileNumber":"9483905234","password":"*****"}"}
+{"timestamp":"2026-09-15 19:11:03.403","level":"ERROR","thread":"http-nio-8000-exec-8","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=POST uri=/api/auth/register/public status=500 durationMs=1447"}
+{"timestamp":"2026-09-15 19:11:29.538","level":"INFO","thread":"http-nio-8000-exec-9","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=POST uri=/api/auth/register/public"}
+{"timestamp":"2026-09-15 19:11:29.566","level":"INFO","thread":"http-nio-8000-exec-9","logger":"c.j.p.a.RegisterValidationAspect","message":"🔍 Validating user registration request"}
+{"timestamp":"2026-09-15 19:11:29.754","level":"WARN","thread":"http-nio-8000-exec-9","logger":"c.j.p.a.RegisterValidationAspect","message":"❌ Registration validation failed: {password=Choose a strong password}"}
+{"timestamp":"2026-09-15 19:11:29.755","level":"ERROR","thread":"http-nio-8000-exec-9","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"❌ Exception occurred in method: AuthController.registerUser(..)"}
+{"timestamp":"2026-09-15 19:11:29.765","level":"ERROR","thread":"http-nio-8000-exec-9","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"📥 Arguments: [RegisterRequestDto[name=Sanjay, email=testing@gmai.com, mobileNumber=9483905234, password=tester123$]]"}
+{"timestamp":"2026-09-15 19:11:29.768","level":"ERROR","thread":"http-nio-8000-exec-9","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"💥 Exception type: RegistrationValidationException"}
+{"timestamp":"2026-09-15 19:11:29.769","level":"ERROR","thread":"http-nio-8000-exec-9","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"🧾 Exception message: Registration validation failed"}
+{"timestamp":"2026-09-15 19:11:29.788","level":"WARN","thread":"http-nio-8000-exec-9","logger":"o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver","message":"Resolved [com.jimmy.portal.exception.RegistrationValidationException: Registration validation failed]"}
+{"timestamp":"2026-09-15 19:11:29.819","level":"INFO","thread":"http-nio-8000-exec-9","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_BODY payload={"name":"Sanjay","email":"testing@gmai.com","mobileNumber":"9483905234","password":"*****"}"}
+{"timestamp":"2026-09-15 19:11:29.865","level":"ERROR","thread":"http-nio-8000-exec-9","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=POST uri=/api/auth/register/public status=500 durationMs=328"}
+{"timestamp":"2026-09-15 19:12:53.581","level":"INFO","thread":"File Watcher","logger":"o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener","message":"Restarting due to 3 class path changes (0 additions, 3 deletions, 0 modifications)"}
+{"timestamp":"2026-09-15 19:12:53.723","level":"INFO","thread":"Thread-56","logger":"o.s.boot.tomcat.GracefulShutdown","message":"Commencing graceful shutdown. Waiting for active requests to complete"}
+{"timestamp":"2026-09-15 19:12:53.766","level":"INFO","thread":"tomcat-shutdown","logger":"o.a.coyote.http11.Http11NioProtocol","message":"Pausing ProtocolHandler ["http-nio-8000"]"}
+{"timestamp":"2026-09-15 19:12:53.802","level":"INFO","thread":"tomcat-shutdown","logger":"o.s.boot.tomcat.GracefulShutdown","message":"Graceful shutdown complete"}
+{"timestamp":"2026-09-15 19:12:53.822","level":"INFO","thread":"Thread-56","logger":"o.a.coyote.http11.Http11NioProtocol","message":"Stopping ProtocolHandler ["http-nio-8000"]"}
+{"timestamp":"2026-09-15 19:12:54.002","level":"INFO","thread":"Thread-56","logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean","message":"Closing JPA EntityManagerFactory for persistence unit 'default'"}
+{"timestamp":"2026-09-15 19:12:54.224","level":"INFO","thread":"Thread-56","logger":"com.zaxxer.hikari.HikariDataSource","message":"HikariPool-5 - Shutdown initiated..."}
+{"timestamp":"2026-09-15 19:12:54.276","level":"INFO","thread":"Thread-56","logger":"com.zaxxer.hikari.HikariDataSource","message":"HikariPool-5 - Shutdown completed."}
+{"timestamp":"2026-09-15 19:12:56.639","level":"INFO","thread":"restartedMain","logger":"com.jimmy.portal.PortalApplication","message":"Starting PortalApplication using Java 26.0.2.1 with PID 11740 (D:\job-portal-server\target\classes started by JIMMY in D:\job-portal-server)"}
+{"timestamp":"2026-09-15 19:12:56.644","level":"INFO","thread":"restartedMain","logger":"com.jimmy.portal.PortalApplication","message":"No active profile set, falling back to 1 default profile: "default""}
+{"timestamp":"2026-09-15 19:12:56.675","level":"INFO","thread":"restartedMain","logger":"o.s.b.d.c.l.DockerComposeLifecycleManager","message":"Using Docker Compose file D:\job-portal-server\compose.yml"}
+{"timestamp":"2026-09-15 19:12:58.866","level":"INFO","thread":"restartedMain","logger":"o.s.b.d.c.l.DockerComposeLifecycleManager","message":"There are already Docker Compose services running, skipping startup"}
+{"timestamp":"2026-09-15 19:12:59.355","level":"WARN","thread":"restartedMain","logger":"o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext","message":"Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: I/O failure while processing configuration class [com.jimmy.portal.company.mapper.CompanyMapperImpl]"}
+{"timestamp":"2026-09-15 19:12:59.368","level":"ERROR","thread":"restartedMain","logger":"o.s.boot.SpringApplication","message":"Application run failed"}
+org.springframework.beans.factory.BeanDefinitionStoreException: I/O failure while processing configuration class [com.jimmy.portal.company.mapper.CompanyMapperImpl]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:290)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:220)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:357)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:285)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:206)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:174)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:452)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:316)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:795)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:603)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.jimmy.portal.PortalApplication.main(PortalApplication.java:12)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52)
+Caused by: java.io.FileNotFoundException: class path resource [com/jimmy/portal/company/mapper/CompanyMapper.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:212)
+	at org.springframework.core.type.classreading.ClassFileMetadataReader.parseClassModel(ClassFileMetadataReader.java:49)
+	at org.springframework.core.type.classreading.ClassFileMetadataReader.<init>(ClassFileMetadataReader.java:45)
+	at org.springframework.core.type.classreading.ClassFileMetadataReaderFactory.getMetadataReader(ClassFileMetadataReaderFactory.java:62)
+	at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:127)
+	at org.springframework.core.type.classreading.AbstractMetadataReaderFactory.getMetadataReader(AbstractMetadataReaderFactory.java:62)
+	at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:40)
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:730)
+	at org.springframework.context.annotation.ConfigurationClassParser$SourceClass.getInterfaces(ConfigurationClassParser.java:1076)
+	at org.springframework.context.annotation.ConfigurationClassParser.collectImports(ConfigurationClassParser.java:568)
+	at org.springframework.context.annotation.ConfigurationClassParser.getImports(ConfigurationClassParser.java:543)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:364)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:285)
+	... 21 common frames omitted
+{"timestamp":"2026-09-15 19:13:08.861","level":"INFO","thread":"restartedMain","logger":"com.jimmy.portal.PortalApplication","message":"Starting PortalApplication using Java 26.0.2.1 with PID 11740 (D:\job-portal-server\target\classes started by JIMMY in D:\job-portal-server)"}
+{"timestamp":"2026-09-15 19:13:08.863","level":"INFO","thread":"restartedMain","logger":"com.jimmy.portal.PortalApplication","message":"No active profile set, falling back to 1 default profile: "default""}
+{"timestamp":"2026-09-15 19:13:08.877","level":"INFO","thread":"restartedMain","logger":"o.s.b.d.c.l.DockerComposeLifecycleManager","message":"Using Docker Compose file D:\job-portal-server\compose.yml"}
+{"timestamp":"2026-09-15 19:13:11.586","level":"INFO","thread":"restartedMain","logger":"o.s.b.d.c.l.DockerComposeLifecycleManager","message":"There are already Docker Compose services running, skipping startup"}
+{"timestamp":"2026-09-15 19:13:13.052","level":"INFO","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode."}
+{"timestamp":"2026-09-15 19:13:13.145","level":"INFO","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","message":"Finished Spring Data repository scanning in 86 ms. Found 4 JPA repository interfaces."}
+{"timestamp":"2026-09-15 19:13:14.000","level":"INFO","thread":"restartedMain","logger":"o.s.boot.tomcat.TomcatWebServer","message":"Tomcat initialized with port 8000 (http)"}
+{"timestamp":"2026-09-15 19:13:14.011","level":"INFO","thread":"restartedMain","logger":"o.a.coyote.http11.Http11NioProtocol","message":"Initializing ProtocolHandler ["http-nio-8000"]"}
+{"timestamp":"2026-09-15 19:13:14.016","level":"INFO","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","message":"Starting service [Tomcat]"}
+{"timestamp":"2026-09-15 19:13:14.018","level":"INFO","thread":"restartedMain","logger":"o.a.catalina.core.StandardEngine","message":"Starting Servlet engine: [Apache Tomcat/11.0.22]"}
+{"timestamp":"2026-09-15 19:13:14.135","level":"INFO","thread":"restartedMain","logger":"o.s.b.w.c.s.WebApplicationContextInitializer","message":"Root WebApplicationContext: initialization completed in 2548 ms"}
+{"timestamp":"2026-09-15 19:13:14.632","level":"INFO","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","message":"HikariPool-6 - Starting..."}
+{"timestamp":"2026-09-15 19:13:14.884","level":"INFO","thread":"restartedMain","logger":"com.zaxxer.hikari.pool.HikariPool","message":"HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e0bb451"}
+{"timestamp":"2026-09-15 19:13:14.884","level":"INFO","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","message":"HikariPool-6 - Start completed."}
+{"timestamp":"2026-09-15 19:13:14.890","level":"INFO","thread":"restartedMain","logger":"org.hibernate.orm.jpa","message":"HHH008540: Processing PersistenceUnitInfo [name: default]"}
+{"timestamp":"2026-09-15 19:13:15.007","level":"INFO","thread":"restartedMain","logger":"o.s.o.j.p.SpringPersistenceUnitInfo","message":"No LoadTimeWeaver setup: ignoring JPA class transformer"}
+{"timestamp":"2026-09-15 19:13:15.023","level":"INFO","thread":"restartedMain","logger":"o.hibernate.orm.connections.pooling","message":"HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://127.0.0.1:3308/jobportal]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.1
+	Default catalog/schema: jobportal/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown"}
+{"timestamp":"2026-09-15 19:13:16.027","level":"INFO","thread":"restartedMain","logger":"org.hibernate.orm.core","message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)"}
+{"timestamp":"2026-09-15 19:13:16.030","level":"INFO","thread":"restartedMain","logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean","message":"Initialized JPA EntityManagerFactory for persistence unit 'default'"}
+{"timestamp":"2026-09-15 19:13:16.925","level":"WARN","thread":"restartedMain","logger":"o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration","message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning"}
+{"timestamp":"2026-09-15 19:13:17.124","level":"INFO","thread":"restartedMain","logger":"o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer","message":"Global AuthenticationManager configured with AuthenticationProvider bean with name jobPortalUsernamePwdAuthenticationProvider"}
+{"timestamp":"2026-09-15 19:13:18.039","level":"INFO","thread":"restartedMain","logger":"o.a.coyote.http11.Http11NioProtocol","message":"Starting ProtocolHandler ["http-nio-8000"]"}
+{"timestamp":"2026-09-15 19:13:18.046","level":"INFO","thread":"restartedMain","logger":"o.s.boot.tomcat.TomcatWebServer","message":"Tomcat started on port 8000 (http) with context path '/'"}
+{"timestamp":"2026-09-15 19:13:18.054","level":"INFO","thread":"restartedMain","logger":"com.jimmy.portal.PortalApplication","message":"Started PortalApplication in 9.306 seconds (process running for 22604.613)"}
+{"timestamp":"2026-09-15 19:13:18.056","level":"WARN","thread":"restartedMain","logger":"o.s.c.events.SpringDocAppInitializer","message":"SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'"}
+{"timestamp":"2026-09-15 19:13:18.057","level":"WARN","thread":"restartedMain","logger":"o.s.c.events.SpringDocAppInitializer","message":"SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'"}
+{"timestamp":"2026-09-15 19:13:18.058","level":"INFO","thread":"restartedMain","logger":"o.s.b.d.a.ConditionEvaluationDeltaLoggingListener","message":"Condition evaluation unchanged"}
+{"timestamp":"2026-09-15 19:13:24.817","level":"INFO","thread":"http-nio-8000-exec-1","logger":"o.a.c.c.C.[Tomcat-1].[localhost].[/]","message":"Initializing Spring DispatcherServlet 'dispatcherServlet'"}
+{"timestamp":"2026-09-15 19:13:24.819","level":"INFO","thread":"http-nio-8000-exec-1","logger":"o.s.web.servlet.DispatcherServlet","message":"Initializing Servlet 'dispatcherServlet'"}
+{"timestamp":"2026-09-15 19:13:24.828","level":"INFO","thread":"http-nio-8000-exec-1","logger":"o.s.web.servlet.DispatcherServlet","message":"Completed initialization in 7 ms"}
+{"timestamp":"2026-09-15 19:13:24.849","level":"INFO","thread":"http-nio-8000-exec-1","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/public"}
+{"timestamp":"2026-09-15 19:13:24.877","level":"INFO","thread":"http-nio-8000-exec-4","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/public"}
+{"timestamp":"2026-09-15 19:13:26.322","level":"INFO","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=POST uri=/api/auth/register/public"}
+{"timestamp":"2026-09-15 19:13:26.348","level":"INFO","thread":"http-nio-8000-exec-5","logger":"c.j.p.a.RegisterValidationAspect","message":"🔍 Validating user registration request"}
+{"timestamp":"2026-09-15 19:13:26.838","level":"INFO","thread":"http-nio-8000-exec-5","logger":"c.j.p.a.RegisterValidationAspect","message":"password tester123$"}
+{"timestamp":"2026-09-15 19:13:26.948","level":"WARN","thread":"http-nio-8000-exec-5","logger":"c.j.p.a.RegisterValidationAspect","message":"❌ Registration validation failed: {password=Choose a strong password}"}
+{"timestamp":"2026-09-15 19:13:26.961","level":"ERROR","thread":"http-nio-8000-exec-5","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"❌ Exception occurred in method: AuthController.registerUser(..)"}
+{"timestamp":"2026-09-15 19:13:27.015","level":"ERROR","thread":"http-nio-8000-exec-5","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"📥 Arguments: [RegisterRequestDto[name=Sanjay, email=testing@gmai.com, mobileNumber=9483905234, password=tester123$]]"}
+{"timestamp":"2026-09-15 19:13:27.017","level":"ERROR","thread":"http-nio-8000-exec-5","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"💥 Exception type: RegistrationValidationException"}
+{"timestamp":"2026-09-15 19:13:27.026","level":"ERROR","thread":"http-nio-8000-exec-5","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"🧾 Exception message: Registration validation failed"}
+{"timestamp":"2026-09-15 19:13:27.119","level":"WARN","thread":"http-nio-8000-exec-5","logger":"o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver","message":"Resolved [com.jimmy.portal.exception.RegistrationValidationException: Registration validation failed]"}
+{"timestamp":"2026-09-15 19:13:27.147","level":"INFO","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_BODY payload={"name":"Sanjay","email":"testing@gmai.com","mobileNumber":"9483905234","password":"*****"}"}
+{"timestamp":"2026-09-15 19:13:27.147","level":"ERROR","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=POST uri=/api/auth/register/public status=500 durationMs=825"}
+{"timestamp":"2026-09-15 19:13:27.978","level":"INFO","thread":"http-nio-8000-exec-4","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/public status=200 durationMs=3100"}
+{"timestamp":"2026-09-15 19:13:27.985","level":"INFO","thread":"http-nio-8000-exec-1","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/public status=200 durationMs=3135"}
+{"timestamp":"2026-09-15 19:14:26.903","level":"INFO","thread":"http-nio-8000-exec-2","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=POST uri=/api/auth/register/public"}
+{"timestamp":"2026-09-15 19:14:26.926","level":"INFO","thread":"http-nio-8000-exec-2","logger":"c.j.p.a.RegisterValidationAspect","message":"🔍 Validating user registration request"}
+{"timestamp":"2026-09-15 19:14:28.490","level":"INFO","thread":"http-nio-8000-exec-2","logger":"c.j.p.a.RegisterValidationAspect","message":"password praveen123$"}
+{"timestamp":"2026-09-15 19:14:28.532","level":"WARN","thread":"http-nio-8000-exec-2","logger":"c.j.p.a.RegisterValidationAspect","message":"❌ Registration validation failed: {password=Choose a strong password}"}
+{"timestamp":"2026-09-15 19:14:28.534","level":"ERROR","thread":"http-nio-8000-exec-2","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"❌ Exception occurred in method: AuthController.registerUser(..)"}
+{"timestamp":"2026-09-15 19:14:28.534","level":"ERROR","thread":"http-nio-8000-exec-2","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"📥 Arguments: [RegisterRequestDto[name=Sanjay, email=testing@gmai.com, mobileNumber=9483905234, password=praveen123$]]"}
+{"timestamp":"2026-09-15 19:14:28.534","level":"ERROR","thread":"http-nio-8000-exec-2","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"💥 Exception type: RegistrationValidationException"}
+{"timestamp":"2026-09-15 19:14:28.534","level":"ERROR","thread":"http-nio-8000-exec-2","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"🧾 Exception message: Registration validation failed"}
+{"timestamp":"2026-09-15 19:14:28.538","level":"WARN","thread":"http-nio-8000-exec-2","logger":"o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver","message":"Resolved [com.jimmy.portal.exception.RegistrationValidationException: Registration validation failed]"}
+{"timestamp":"2026-09-15 19:14:28.540","level":"INFO","thread":"http-nio-8000-exec-2","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_BODY payload={"name":"Sanjay","email":"testing@gmai.com","mobileNumber":"9483905234","password":"*****"}"}
+{"timestamp":"2026-09-15 19:14:28.540","level":"ERROR","thread":"http-nio-8000-exec-2","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=POST uri=/api/auth/register/public status=500 durationMs=1636"}
+{"timestamp":"2026-09-15 19:16:26.292","level":"INFO","thread":"File Watcher","logger":"o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener","message":"Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)"}
+{"timestamp":"2026-09-15 19:16:26.365","level":"INFO","thread":"Thread-78","logger":"o.s.boot.tomcat.GracefulShutdown","message":"Commencing graceful shutdown. Waiting for active requests to complete"}
+{"timestamp":"2026-09-15 19:16:26.386","level":"INFO","thread":"tomcat-shutdown","logger":"o.a.coyote.http11.Http11NioProtocol","message":"Pausing ProtocolHandler ["http-nio-8000"]"}
+{"timestamp":"2026-09-15 19:16:26.423","level":"INFO","thread":"tomcat-shutdown","logger":"o.s.boot.tomcat.GracefulShutdown","message":"Graceful shutdown complete"}
+{"timestamp":"2026-09-15 19:16:26.428","level":"INFO","thread":"Thread-78","logger":"o.a.coyote.http11.Http11NioProtocol","message":"Stopping ProtocolHandler ["http-nio-8000"]"}
+{"timestamp":"2026-09-15 19:16:26.478","level":"INFO","thread":"Thread-78","logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean","message":"Closing JPA EntityManagerFactory for persistence unit 'default'"}
+{"timestamp":"2026-09-15 19:16:26.525","level":"INFO","thread":"Thread-78","logger":"com.zaxxer.hikari.HikariDataSource","message":"HikariPool-6 - Shutdown initiated..."}
+{"timestamp":"2026-09-15 19:16:26.573","level":"INFO","thread":"Thread-78","logger":"com.zaxxer.hikari.HikariDataSource","message":"HikariPool-6 - Shutdown completed."}
+{"timestamp":"2026-09-15 19:16:30.693","level":"INFO","thread":"restartedMain","logger":"com.jimmy.portal.PortalApplication","message":"Starting PortalApplication using Java 26.0.2.1 with PID 11740 (D:\job-portal-server\target\classes started by JIMMY in D:\job-portal-server)"}
+{"timestamp":"2026-09-15 19:16:30.695","level":"INFO","thread":"restartedMain","logger":"com.jimmy.portal.PortalApplication","message":"No active profile set, falling back to 1 default profile: "default""}
+{"timestamp":"2026-09-15 19:16:30.742","level":"INFO","thread":"restartedMain","logger":"o.s.b.d.c.l.DockerComposeLifecycleManager","message":"Using Docker Compose file D:\job-portal-server\compose.yml"}
+{"timestamp":"2026-09-15 19:16:34.542","level":"INFO","thread":"restartedMain","logger":"o.s.b.d.c.l.DockerComposeLifecycleManager","message":"There are already Docker Compose services running, skipping startup"}
+{"timestamp":"2026-09-15 19:16:36.022","level":"INFO","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode."}
+{"timestamp":"2026-09-15 19:16:36.095","level":"INFO","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","message":"Finished Spring Data repository scanning in 67 ms. Found 4 JPA repository interfaces."}
+{"timestamp":"2026-09-15 19:16:36.779","level":"INFO","thread":"restartedMain","logger":"o.s.boot.tomcat.TomcatWebServer","message":"Tomcat initialized with port 8000 (http)"}
+{"timestamp":"2026-09-15 19:16:36.785","level":"INFO","thread":"restartedMain","logger":"o.a.coyote.http11.Http11NioProtocol","message":"Initializing ProtocolHandler ["http-nio-8000"]"}
+{"timestamp":"2026-09-15 19:16:36.785","level":"INFO","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","message":"Starting service [Tomcat]"}
+{"timestamp":"2026-09-15 19:16:36.786","level":"INFO","thread":"restartedMain","logger":"o.a.catalina.core.StandardEngine","message":"Starting Servlet engine: [Apache Tomcat/11.0.22]"}
+{"timestamp":"2026-09-15 19:16:36.874","level":"INFO","thread":"restartedMain","logger":"o.s.b.w.c.s.WebApplicationContextInitializer","message":"Root WebApplicationContext: initialization completed in 2331 ms"}
+{"timestamp":"2026-09-15 19:16:37.671","level":"INFO","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","message":"HikariPool-7 - Starting..."}
+{"timestamp":"2026-09-15 19:16:37.865","level":"INFO","thread":"restartedMain","logger":"com.zaxxer.hikari.pool.HikariPool","message":"HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a8b37ef"}
+{"timestamp":"2026-09-15 19:16:37.867","level":"INFO","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","message":"HikariPool-7 - Start completed."}
+{"timestamp":"2026-09-15 19:16:37.870","level":"INFO","thread":"restartedMain","logger":"org.hibernate.orm.jpa","message":"HHH008540: Processing PersistenceUnitInfo [name: default]"}
+{"timestamp":"2026-09-15 19:16:37.967","level":"INFO","thread":"restartedMain","logger":"o.s.o.j.p.SpringPersistenceUnitInfo","message":"No LoadTimeWeaver setup: ignoring JPA class transformer"}
+{"timestamp":"2026-09-15 19:16:37.983","level":"INFO","thread":"restartedMain","logger":"o.hibernate.orm.connections.pooling","message":"HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://127.0.0.1:3308/jobportal]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.1
+	Default catalog/schema: jobportal/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown"}
+{"timestamp":"2026-09-15 19:16:38.671","level":"INFO","thread":"restartedMain","logger":"org.hibernate.orm.core","message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)"}
+{"timestamp":"2026-09-15 19:16:38.675","level":"INFO","thread":"restartedMain","logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean","message":"Initialized JPA EntityManagerFactory for persistence unit 'default'"}
+{"timestamp":"2026-09-15 19:16:39.858","level":"WARN","thread":"restartedMain","logger":"o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration","message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning"}
+{"timestamp":"2026-09-15 19:16:40.138","level":"INFO","thread":"restartedMain","logger":"o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer","message":"Global AuthenticationManager configured with AuthenticationProvider bean with name jobPortalUsernamePwdAuthenticationProvider"}
+{"timestamp":"2026-09-15 19:16:41.134","level":"INFO","thread":"restartedMain","logger":"o.a.coyote.http11.Http11NioProtocol","message":"Starting ProtocolHandler ["http-nio-8000"]"}
+{"timestamp":"2026-09-15 19:16:41.143","level":"INFO","thread":"restartedMain","logger":"o.s.boot.tomcat.TomcatWebServer","message":"Tomcat started on port 8000 (http) with context path '/'"}
+{"timestamp":"2026-09-15 19:16:41.151","level":"INFO","thread":"restartedMain","logger":"com.jimmy.portal.PortalApplication","message":"Started PortalApplication in 10.687 seconds (process running for 22807.71)"}
+{"timestamp":"2026-09-15 19:16:41.154","level":"WARN","thread":"restartedMain","logger":"o.s.c.events.SpringDocAppInitializer","message":"SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'"}
+{"timestamp":"2026-09-15 19:16:41.154","level":"WARN","thread":"restartedMain","logger":"o.s.c.events.SpringDocAppInitializer","message":"SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'"}
+{"timestamp":"2026-09-15 19:16:41.156","level":"INFO","thread":"restartedMain","logger":"o.s.b.d.a.ConditionEvaluationDeltaLoggingListener","message":"Condition evaluation unchanged"}
+{"timestamp":"2026-09-15 19:16:43.458","level":"INFO","thread":"File Watcher","logger":"o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener","message":"Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)"}
+{"timestamp":"2026-09-15 19:16:43.465","level":"INFO","thread":"Thread-100","logger":"o.s.boot.tomcat.GracefulShutdown","message":"Commencing graceful shutdown. Waiting for active requests to complete"}
+{"timestamp":"2026-09-15 19:16:43.467","level":"INFO","thread":"tomcat-shutdown","logger":"o.a.coyote.http11.Http11NioProtocol","message":"Pausing ProtocolHandler ["http-nio-8000"]"}
+{"timestamp":"2026-09-15 19:16:43.512","level":"INFO","thread":"tomcat-shutdown","logger":"o.s.boot.tomcat.GracefulShutdown","message":"Graceful shutdown complete"}
+{"timestamp":"2026-09-15 19:16:43.513","level":"INFO","thread":"Thread-100","logger":"o.a.coyote.http11.Http11NioProtocol","message":"Stopping ProtocolHandler ["http-nio-8000"]"}
+{"timestamp":"2026-09-15 19:16:43.517","level":"INFO","thread":"Thread-100","logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean","message":"Closing JPA EntityManagerFactory for persistence unit 'default'"}
+{"timestamp":"2026-09-15 19:16:43.519","level":"INFO","thread":"Thread-100","logger":"com.zaxxer.hikari.HikariDataSource","message":"HikariPool-7 - Shutdown initiated..."}
+{"timestamp":"2026-09-15 19:16:43.535","level":"INFO","thread":"Thread-100","logger":"com.zaxxer.hikari.HikariDataSource","message":"HikariPool-7 - Shutdown completed."}
+{"timestamp":"2026-09-15 19:16:43.926","level":"INFO","thread":"restartedMain","logger":"com.jimmy.portal.PortalApplication","message":"Starting PortalApplication using Java 26.0.2.1 with PID 11740 (D:\job-portal-server\target\classes started by JIMMY in D:\job-portal-server)"}
+{"timestamp":"2026-09-15 19:16:43.928","level":"INFO","thread":"restartedMain","logger":"com.jimmy.portal.PortalApplication","message":"No active profile set, falling back to 1 default profile: "default""}
+{"timestamp":"2026-09-15 19:16:43.942","level":"INFO","thread":"restartedMain","logger":"o.s.b.d.c.l.DockerComposeLifecycleManager","message":"Using Docker Compose file D:\job-portal-server\compose.yml"}
+{"timestamp":"2026-09-15 19:16:45.563","level":"INFO","thread":"restartedMain","logger":"o.s.b.d.c.l.DockerComposeLifecycleManager","message":"There are already Docker Compose services running, skipping startup"}
+{"timestamp":"2026-09-15 19:16:46.528","level":"INFO","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode."}
+{"timestamp":"2026-09-15 19:16:46.604","level":"INFO","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","message":"Finished Spring Data repository scanning in 72 ms. Found 4 JPA repository interfaces."}
+{"timestamp":"2026-09-15 19:16:47.042","level":"INFO","thread":"restartedMain","logger":"o.s.boot.tomcat.TomcatWebServer","message":"Tomcat initialized with port 8000 (http)"}
+{"timestamp":"2026-09-15 19:16:47.044","level":"INFO","thread":"restartedMain","logger":"o.a.coyote.http11.Http11NioProtocol","message":"Initializing ProtocolHandler ["http-nio-8000"]"}
+{"timestamp":"2026-09-15 19:16:47.044","level":"INFO","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","message":"Starting service [Tomcat]"}
+{"timestamp":"2026-09-15 19:16:47.044","level":"INFO","thread":"restartedMain","logger":"o.a.catalina.core.StandardEngine","message":"Starting Servlet engine: [Apache Tomcat/11.0.22]"}
+{"timestamp":"2026-09-15 19:16:47.091","level":"INFO","thread":"restartedMain","logger":"o.s.b.w.c.s.WebApplicationContextInitializer","message":"Root WebApplicationContext: initialization completed in 1527 ms"}
+{"timestamp":"2026-09-15 19:16:47.394","level":"INFO","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","message":"HikariPool-8 - Starting..."}
+{"timestamp":"2026-09-15 19:16:47.452","level":"INFO","thread":"restartedMain","logger":"com.zaxxer.hikari.pool.HikariPool","message":"HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@d48fcb2"}
+{"timestamp":"2026-09-15 19:16:47.453","level":"INFO","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","message":"HikariPool-8 - Start completed."}
+{"timestamp":"2026-09-15 19:16:47.455","level":"INFO","thread":"restartedMain","logger":"org.hibernate.orm.jpa","message":"HHH008540: Processing PersistenceUnitInfo [name: default]"}
+{"timestamp":"2026-09-15 19:16:47.500","level":"INFO","thread":"restartedMain","logger":"o.s.o.j.p.SpringPersistenceUnitInfo","message":"No LoadTimeWeaver setup: ignoring JPA class transformer"}
+{"timestamp":"2026-09-15 19:16:47.511","level":"INFO","thread":"restartedMain","logger":"o.hibernate.orm.connections.pooling","message":"HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://127.0.0.1:3308/jobportal]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.1
+	Default catalog/schema: jobportal/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown"}
+{"timestamp":"2026-09-15 19:16:48.040","level":"INFO","thread":"restartedMain","logger":"org.hibernate.orm.core","message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)"}
+{"timestamp":"2026-09-15 19:16:48.044","level":"INFO","thread":"restartedMain","logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean","message":"Initialized JPA EntityManagerFactory for persistence unit 'default'"}
+{"timestamp":"2026-09-15 19:16:48.797","level":"WARN","thread":"restartedMain","logger":"o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration","message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning"}
+{"timestamp":"2026-09-15 19:16:49.024","level":"INFO","thread":"restartedMain","logger":"o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer","message":"Global AuthenticationManager configured with AuthenticationProvider bean with name jobPortalUsernamePwdAuthenticationProvider"}
+{"timestamp":"2026-09-15 19:16:50.021","level":"INFO","thread":"restartedMain","logger":"o.a.coyote.http11.Http11NioProtocol","message":"Starting ProtocolHandler ["http-nio-8000"]"}
+{"timestamp":"2026-09-15 19:16:50.028","level":"INFO","thread":"restartedMain","logger":"o.s.boot.tomcat.TomcatWebServer","message":"Tomcat started on port 8000 (http) with context path '/'"}
+{"timestamp":"2026-09-15 19:16:50.033","level":"INFO","thread":"restartedMain","logger":"com.jimmy.portal.PortalApplication","message":"Started PortalApplication in 6.219 seconds (process running for 22816.592)"}
+{"timestamp":"2026-09-15 19:16:50.035","level":"WARN","thread":"restartedMain","logger":"o.s.c.events.SpringDocAppInitializer","message":"SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'"}
+{"timestamp":"2026-09-15 19:16:50.035","level":"WARN","thread":"restartedMain","logger":"o.s.c.events.SpringDocAppInitializer","message":"SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'"}
+{"timestamp":"2026-09-15 19:16:50.037","level":"INFO","thread":"restartedMain","logger":"o.s.b.d.a.ConditionEvaluationDeltaLoggingListener","message":"Condition evaluation unchanged"}
+{"timestamp":"2026-09-15 19:17:07.709","level":"INFO","thread":"http-nio-8000-exec-1","logger":"o.a.c.c.C.[Tomcat-1].[localhost].[/]","message":"Initializing Spring DispatcherServlet 'dispatcherServlet'"}
+{"timestamp":"2026-09-15 19:17:07.709","level":"INFO","thread":"http-nio-8000-exec-1","logger":"o.s.web.servlet.DispatcherServlet","message":"Initializing Servlet 'dispatcherServlet'"}
+{"timestamp":"2026-09-15 19:17:07.719","level":"INFO","thread":"http-nio-8000-exec-1","logger":"o.s.web.servlet.DispatcherServlet","message":"Completed initialization in 10 ms"}
+{"timestamp":"2026-09-15 19:17:07.778","level":"INFO","thread":"http-nio-8000-exec-2","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=POST uri=/api/auth/register/public"}
+{"timestamp":"2026-09-15 19:17:07.938","level":"INFO","thread":"http-nio-8000-exec-2","logger":"c.j.p.a.RegisterValidationAspect","message":"🔍 Validating user registration request"}
+{"timestamp":"2026-09-15 19:17:09.357","level":"INFO","thread":"http-nio-8000-exec-2","logger":"c.j.p.a.RegisterValidationAspect","message":"password 12345678 true"}
+{"timestamp":"2026-09-15 19:17:09.595","level":"WARN","thread":"http-nio-8000-exec-2","logger":"c.j.p.a.RegisterValidationAspect","message":"❌ Registration validation failed: {password=Choose a strong password}"}
+{"timestamp":"2026-09-15 19:17:09.613","level":"ERROR","thread":"http-nio-8000-exec-2","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"❌ Exception occurred in method: AuthController.registerUser(..)"}
+{"timestamp":"2026-09-15 19:17:09.658","level":"ERROR","thread":"http-nio-8000-exec-2","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"📥 Arguments: [RegisterRequestDto[name=Sanjay, email=testing@gmai.com, mobileNumber=9483905234, password=12345678]]"}
+{"timestamp":"2026-09-15 19:17:09.660","level":"ERROR","thread":"http-nio-8000-exec-2","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"💥 Exception type: RegistrationValidationException"}
+{"timestamp":"2026-09-15 19:17:09.660","level":"ERROR","thread":"http-nio-8000-exec-2","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"🧾 Exception message: Registration validation failed"}
+{"timestamp":"2026-09-15 19:17:09.709","level":"WARN","thread":"http-nio-8000-exec-2","logger":"o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver","message":"Resolved [com.jimmy.portal.exception.RegistrationValidationException: Registration validation failed]"}
+{"timestamp":"2026-09-15 19:17:09.773","level":"INFO","thread":"http-nio-8000-exec-2","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_BODY payload={"name":"Sanjay","email":"testing@gmai.com","mobileNumber":"9483905234","password":"*****"}"}
+{"timestamp":"2026-09-15 19:17:09.776","level":"ERROR","thread":"http-nio-8000-exec-2","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=POST uri=/api/auth/register/public status=500 durationMs=1995"}
+{"timestamp":"2026-09-15 19:17:40.667","level":"INFO","thread":"http-nio-8000-exec-6","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=POST uri=/api/auth/register/public"}
+{"timestamp":"2026-09-15 19:17:40.678","level":"INFO","thread":"http-nio-8000-exec-6","logger":"c.j.p.a.RegisterValidationAspect","message":"🔍 Validating user registration request"}
+{"timestamp":"2026-09-15 19:17:41.140","level":"INFO","thread":"http-nio-8000-exec-6","logger":"c.j.p.a.RegisterValidationAspect","message":"password praveen123$abc false"}
+{"timestamp":"2026-09-15 19:17:41.154","level":"INFO","thread":"http-nio-8000-exec-6","logger":"c.j.p.a.RegisterValidationAspect","message":"✅ Registration validation passed"}
+{"timestamp":"2026-09-15 19:17:42.039","level":"INFO","thread":"http-nio-8000-exec-6","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_BODY payload={"name":"Sanjay","email":"testing@gmai.com","mobileNumber":"9483905234","password":"*****"}"}
+{"timestamp":"2026-09-15 19:17:42.040","level":"INFO","thread":"http-nio-8000-exec-6","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=POST uri=/api/auth/register/public status=201 durationMs=1371"}
+{"timestamp":"2026-09-15 19:18:28.334","level":"INFO","thread":"http-nio-8000-exec-4","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=POST uri=/api/auth/login/public"}
+{"timestamp":"2026-09-15 19:18:29.103","level":"INFO","thread":"http-nio-8000-exec-4","logger":"c.j.p.a.LoginSuccessAuditAspect","message":"✅ LOGIN SUCCESS | User: admin@gmail.com | Role: ROLE_ADMIN"}
+{"timestamp":"2026-09-15 19:18:29.123","level":"INFO","thread":"http-nio-8000-exec-4","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_BODY payload={"username":"admin@gmail.com","password":"*****"}"}
+{"timestamp":"2026-09-15 19:18:29.123","level":"INFO","thread":"http-nio-8000-exec-4","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=POST uri=/api/auth/login/public status=200 durationMs=788"}
+{"timestamp":"2026-09-15 19:18:32.278","level":"INFO","thread":"http-nio-8000-exec-8","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/public"}
+{"timestamp":"2026-09-15 19:18:32.288","level":"INFO","thread":"http-nio-8000-exec-7","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/public"}
+{"timestamp":"2026-09-15 19:18:33.718","level":"INFO","thread":"http-nio-8000-exec-1","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/contacts/page/admin"}
+{"timestamp":"2026-09-15 19:18:33.718","level":"INFO","thread":"http-nio-8000-exec-9","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/contacts/page/admin"}
+{"timestamp":"2026-09-15 19:18:35.010","level":"INFO","thread":"http-nio-8000-exec-8","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/public status=200 durationMs=2730"}
+{"timestamp":"2026-09-15 19:18:35.012","level":"INFO","thread":"http-nio-8000-exec-7","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/public status=200 durationMs=2732"}
+{"timestamp":"2026-09-15 19:18:35.437","level":"WARN","thread":"http-nio-8000-exec-1","logger":"o.s.d.w.c.SpringDataJackson3Configuration$PageModule$WarningLoggingModifier","message":"Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+"}
+{"timestamp":"2026-09-15 19:18:35.519","level":"INFO","thread":"http-nio-8000-exec-1","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/contacts/page/admin status=200 durationMs=1800"}
+{"timestamp":"2026-09-15 19:18:35.522","level":"INFO","thread":"http-nio-8000-exec-9","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/contacts/page/admin status=200 durationMs=1803"}
+{"timestamp":"2026-09-15 19:19:20.905","level":"INFO","thread":"http-nio-8000-exec-3","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=PUT uri=/api/companies/1"}
+{"timestamp":"2026-09-15 19:19:20.980","level":"WARN","thread":"http-nio-8000-exec-3","logger":"o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver","message":"Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/companies/1 for request '/api/companies/1'.]"}
+{"timestamp":"2026-09-15 19:19:20.982","level":"ERROR","thread":"http-nio-8000-exec-3","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=PUT uri=/api/companies/1 status=500 durationMs=77"}
+{"timestamp":"2026-09-15 19:19:30.977","level":"INFO","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=PUT uri=/api/companies/1"}
+{"timestamp":"2026-09-15 19:19:31.010","level":"WARN","thread":"http-nio-8000-exec-5","logger":"o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver","message":"Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/companies/1 for request '/api/companies/1'.]"}
+{"timestamp":"2026-09-15 19:19:31.014","level":"ERROR","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=PUT uri=/api/companies/1 status=500 durationMs=36"}
+{"timestamp":"2026-09-15 19:21:42.136","level":"INFO","thread":"http-nio-8000-exec-8","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/swagger-ui/index.html"}
+{"timestamp":"2026-09-15 19:21:42.382","level":"INFO","thread":"http-nio-8000-exec-8","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/swagger-ui/index.html status=200 durationMs=250"}
+{"timestamp":"2026-09-15 19:21:42.468","level":"INFO","thread":"http-nio-8000-exec-7","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/swagger-ui/swagger-ui.css"}
+{"timestamp":"2026-09-15 19:21:42.468","level":"INFO","thread":"http-nio-8000-exec-9","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/swagger-ui/swagger-ui-bundle.js"}
+{"timestamp":"2026-09-15 19:21:42.470","level":"INFO","thread":"http-nio-8000-exec-1","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/swagger-ui/index.css"}
+{"timestamp":"2026-09-15 19:21:42.470","level":"INFO","thread":"http-nio-8000-exec-2","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/swagger-ui/swagger-ui-standalone-preset.js"}
+{"timestamp":"2026-09-15 19:21:42.490","level":"INFO","thread":"http-nio-8000-exec-3","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/swagger-ui/swagger-initializer.js"}
+{"timestamp":"2026-09-15 19:21:42.502","level":"INFO","thread":"http-nio-8000-exec-1","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/swagger-ui/index.css status=200 durationMs=31"}
+{"timestamp":"2026-09-15 19:21:42.531","level":"INFO","thread":"http-nio-8000-exec-7","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/swagger-ui/swagger-ui.css status=200 durationMs=63"}
+{"timestamp":"2026-09-15 19:21:42.573","level":"INFO","thread":"http-nio-8000-exec-2","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/swagger-ui/swagger-ui-standalone-preset.js status=200 durationMs=103"}
+{"timestamp":"2026-09-15 19:21:42.712","level":"INFO","thread":"http-nio-8000-exec-9","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/swagger-ui/swagger-ui-bundle.js status=200 durationMs=243"}
+{"timestamp":"2026-09-15 19:21:42.859","level":"INFO","thread":"http-nio-8000-exec-3","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/swagger-ui/swagger-initializer.js status=200 durationMs=369"}
+{"timestamp":"2026-09-15 19:21:43.893","level":"INFO","thread":"http-nio-8000-exec-6","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/v3/api-docs/swagger-config"}
+{"timestamp":"2026-09-15 19:21:43.907","level":"INFO","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/swagger-ui/favicon-32x32.png"}
+{"timestamp":"2026-09-15 19:21:43.924","level":"INFO","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/swagger-ui/favicon-32x32.png status=200 durationMs=17"}
+{"timestamp":"2026-09-15 19:21:44.027","level":"INFO","thread":"http-nio-8000-exec-6","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/v3/api-docs/swagger-config status=200 durationMs=132"}
+{"timestamp":"2026-09-15 19:21:44.071","level":"INFO","thread":"http-nio-8000-exec-10","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/v3/api-docs"}
+{"timestamp":"2026-09-15 19:21:47.289","level":"INFO","thread":"http-nio-8000-exec-10","logger":"o.s.api.AbstractOpenApiResource","message":"Init duration for springdoc-openapi is: 2898 ms"}
+{"timestamp":"2026-09-15 19:21:47.463","level":"INFO","thread":"http-nio-8000-exec-10","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/v3/api-docs status=200 durationMs=3394"}
+{"timestamp":"2026-09-15 19:30:58.257","level":"INFO","thread":"http-nio-8000-exec-3","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/public"}
+{"timestamp":"2026-09-15 19:30:58.334","level":"INFO","thread":"http-nio-8000-exec-9","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/public"}
+{"timestamp":"2026-09-15 19:30:58.255","level":"INFO","thread":"http-nio-8000-exec-6","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/public"}
+{"timestamp":"2026-09-15 19:30:58.331","level":"INFO","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/public"}
+{"timestamp":"2026-09-15 19:31:05.890","level":"INFO","thread":"http-nio-8000-exec-10","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=POST uri=/api/auth/login/public"}
+{"timestamp":"2026-09-15 19:31:08.859","level":"INFO","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/public status=200 durationMs=10527"}
+{"timestamp":"2026-09-15 19:31:09.006","level":"INFO","thread":"http-nio-8000-exec-6","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/public status=200 durationMs=10754"}
+{"timestamp":"2026-09-15 19:31:09.443","level":"INFO","thread":"http-nio-8000-exec-10","logger":"c.j.p.a.LoginSuccessAuditAspect","message":"✅ LOGIN SUCCESS | User: admin@gmail.com | Role: ROLE_ADMIN"}
+{"timestamp":"2026-09-15 19:31:09.525","level":"INFO","thread":"http-nio-8000-exec-10","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_BODY payload={"username":"admin@gmail.com","password":"*****"}"}
+{"timestamp":"2026-09-15 19:31:09.525","level":"INFO","thread":"http-nio-8000-exec-10","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=POST uri=/api/auth/login/public status=200 durationMs=3636"}
+{"timestamp":"2026-09-15 19:31:10.954","level":"INFO","thread":"http-nio-8000-exec-9","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/public status=200 durationMs=12619"}
+{"timestamp":"2026-09-15 19:31:11.023","level":"INFO","thread":"http-nio-8000-exec-3","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/public status=200 durationMs=12771"}
+{"timestamp":"2026-09-15 19:31:52.188","level":"INFO","thread":"http-nio-8000-exec-8","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/public"}
+{"timestamp":"2026-09-15 19:31:52.192","level":"INFO","thread":"http-nio-8000-exec-4","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/public"}
+{"timestamp":"2026-09-15 19:31:54.684","level":"INFO","thread":"http-nio-8000-exec-8","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/public status=200 durationMs=2497"}
+{"timestamp":"2026-09-15 19:31:54.935","level":"INFO","thread":"http-nio-8000-exec-4","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/public status=200 durationMs=2741"}
+{"timestamp":"2026-09-15 19:32:22.208","level":"INFO","thread":"http-nio-8000-exec-9","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/public"}
+{"timestamp":"2026-09-15 19:32:22.302","level":"INFO","thread":"http-nio-8000-exec-10","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/public"}
+{"timestamp":"2026-09-15 19:32:24.645","level":"INFO","thread":"http-nio-8000-exec-9","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/public status=200 durationMs=2437"}
+{"timestamp":"2026-09-15 19:32:24.821","level":"INFO","thread":"http-nio-8000-exec-10","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/public status=200 durationMs=2518"}
+{"timestamp":"2026-09-15 19:32:31.583","level":"INFO","thread":"http-nio-8000-exec-3","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=POST uri=/api/auth/login/public"}
+{"timestamp":"2026-09-15 19:32:32.045","level":"INFO","thread":"http-nio-8000-exec-3","logger":"c.j.p.a.LoginSuccessAuditAspect","message":"✅ LOGIN SUCCESS | User: admin@gmail.com | Role: ROLE_ADMIN"}
+{"timestamp":"2026-09-15 19:32:32.071","level":"INFO","thread":"http-nio-8000-exec-3","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_BODY payload={"username":"admin@gmail.com","password":"*****"}"}
+{"timestamp":"2026-09-15 19:32:32.073","level":"INFO","thread":"http-nio-8000-exec-3","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=POST uri=/api/auth/login/public status=200 durationMs=492"}
+{"timestamp":"2026-09-15 19:32:55.393","level":"INFO","thread":"http-nio-8000-exec-4","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=PATCH uri=/api/companies/1/admin"}
+{"timestamp":"2026-09-15 19:32:55.651","level":"WARN","thread":"http-nio-8000-exec-4","logger":"o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver","message":"Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PATCH' is not supported]"}
+{"timestamp":"2026-09-15 19:32:55.651","level":"ERROR","thread":"http-nio-8000-exec-4","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=PATCH uri=/api/companies/1/admin status=500 durationMs=257"}
+{"timestamp":"2026-09-15 19:33:51.797","level":"INFO","thread":"http-nio-8000-exec-2","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=PUT uri=/api/companies/1/admin"}
+{"timestamp":"2026-09-15 19:33:55.904","level":"INFO","thread":"http-nio-8000-exec-2","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_BODY payload={"name":"TechCorp Inc.","logo":"/logos/techcorp.png","industry":"Technology","size":"Large","rating":4.5,"locations":"San Francisco,New York,Austin","founded":2010,"description":"TechCorp Inc. is a leading technology company founded in 2010. We're committed to innovation and creating exceptional experiences for our customers and employees.","employees":15000,"website":"https://www.techcorpinc.com"}"}
+{"timestamp":"2026-09-15 19:33:55.904","level":"INFO","thread":"http-nio-8000-exec-2","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=PUT uri=/api/companies/1/admin status=200 durationMs=4106"}
+{"timestamp":"2026-09-15 19:34:04.094","level":"INFO","thread":"http-nio-8000-exec-6","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=PUT uri=/api/companies/1/admin"}
+{"timestamp":"2026-09-15 19:34:04.225","level":"INFO","thread":"http-nio-8000-exec-6","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_BODY payload={"name":"TechCorp Inc.","logo":"/logos/techcorp.png","industry":"Technology","size":"Large","rating":4.7,"locations":"San Francisco,New York,Austin","founded":2010,"description":"TechCorp Inc. is a leading technology company founded in 2010. We're committed to innovation and creating exceptional experiences for our customers and employees.","employees":15000,"website":"https://www.techcorpinc.com"}"}
+{"timestamp":"2026-09-15 19:34:04.226","level":"INFO","thread":"http-nio-8000-exec-6","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=PUT uri=/api/companies/1/admin status=200 durationMs=131"}
+{"timestamp":"2026-09-15 19:34:20.717","level":"INFO","thread":"http-nio-8000-exec-10","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=PUT uri=/api/companies/1/admin"}
+{"timestamp":"2026-09-15 19:34:20.823","level":"INFO","thread":"http-nio-8000-exec-10","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_BODY payload={"name":"TechCorp Inc.","logo":"/logos/techcorp.png","industry":"Technology","size":"Large","rating":4.7,"locations":"San Francisco,New York,Austin","founded":2010,"description":"TechCorp Inc. is a leading technology company founded in 2010. We're committed to innovation and creating exceptional experiences for our customers and employees.","employees":15000,"website":"https://www.techcorpinc.com"}"}
+{"timestamp":"2026-09-15 19:34:20.823","level":"INFO","thread":"http-nio-8000-exec-10","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=PUT uri=/api/companies/1/admin status=200 durationMs=107"}
+{"timestamp":"2026-09-15 19:35:13.296","level":"INFO","thread":"http-nio-8000-exec-4","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=PUT uri=/api/companies/30/admin"}
+{"timestamp":"2026-09-15 19:35:13.469","level":"INFO","thread":"http-nio-8000-exec-4","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_BODY payload={"name":"Figma","logo":"/logos/figma.png","industry":"Technology","size":"Medium","rating":4.7,"locations":"San Francisco,New York,London","founded":2012,"description":"Figma is a leading technology company founded in 2012. We're committed to innovation and creating exceptional experiences for our customers and employees.","employees":1000,"website":"https://www.figma.com"}"}
+{"timestamp":"2026-09-15 19:35:13.470","level":"INFO","thread":"http-nio-8000-exec-4","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=PUT uri=/api/companies/30/admin status=200 durationMs=175"}
+{"timestamp":"2026-09-15 19:36:25.151","level":"INFO","thread":"http-nio-8000-exec-1","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=POST uri=/api/companies/public"}
+{"timestamp":"2026-09-15 19:36:25.267","level":"WARN","thread":"http-nio-8000-exec-1","logger":"o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver","message":"Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]"}
+{"timestamp":"2026-09-15 19:36:25.273","level":"ERROR","thread":"http-nio-8000-exec-1","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=POST uri=/api/companies/public status=500 durationMs=124"}
+{"timestamp":"2026-09-15 19:40:11.261","level":"INFO","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/public"}
+{"timestamp":"2026-09-15 19:40:11.261","level":"INFO","thread":"http-nio-8000-exec-2","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/public"}
+{"timestamp":"2026-09-15 19:40:13.576","level":"INFO","thread":"http-nio-8000-exec-2","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/public status=200 durationMs=2322"}
+{"timestamp":"2026-09-15 19:40:13.576","level":"INFO","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/public status=200 durationMs=2322"}
+{"timestamp":"2026-09-15 19:40:42.828","level":"INFO","thread":"http-nio-8000-exec-6","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/public"}
+{"timestamp":"2026-09-15 19:40:45.612","level":"INFO","thread":"http-nio-8000-exec-6","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/public status=200 durationMs=2784"}
+{"timestamp":"2026-09-15 19:42:04.267","level":"INFO","thread":"http-nio-8000-exec-7","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/public"}
+{"timestamp":"2026-09-15 19:42:04.269","level":"INFO","thread":"http-nio-8000-exec-4","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/public"}
+{"timestamp":"2026-09-15 19:42:07.200","level":"INFO","thread":"http-nio-8000-exec-4","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/public status=200 durationMs=2930"}
+{"timestamp":"2026-09-15 19:42:07.375","level":"INFO","thread":"http-nio-8000-exec-7","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/public status=200 durationMs=3108"}
+{"timestamp":"2026-09-15 19:42:08.223","level":"INFO","thread":"http-nio-8000-exec-2","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=POST uri=/api/auth/login/public"}
+{"timestamp":"2026-09-15 19:42:09.495","level":"INFO","thread":"http-nio-8000-exec-2","logger":"c.j.p.a.LoginSuccessAuditAspect","message":"✅ LOGIN SUCCESS | User: admin@gmail.com | Role: ROLE_ADMIN"}
+{"timestamp":"2026-09-15 19:42:09.534","level":"INFO","thread":"http-nio-8000-exec-2","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_BODY payload={"username":"admin@gmail.com","password":"*****"}"}
+{"timestamp":"2026-09-15 19:42:09.535","level":"INFO","thread":"http-nio-8000-exec-2","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=POST uri=/api/auth/login/public status=200 durationMs=1311"}
+{"timestamp":"2026-09-15 19:42:34.128","level":"INFO","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=POST uri=/api/companies/admin"}
+{"timestamp":"2026-09-15 19:42:35.586","level":"INFO","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_BODY payload={"name":"fdsfd","logo":"tretre","industry":"fdsfd","size":"fdsfd","rating":4,"locations":"xgdfgd","founded":2022,"description":"gdfgfdgfd","employees":4,"website":"https://chatgpt.com/c/6aa905f8-71e4-83ee-9fad-ed0d46053f72"}"}
+{"timestamp":"2026-09-15 19:42:35.586","level":"INFO","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=POST uri=/api/companies/admin status=201 durationMs=1459"}
+{"timestamp":"2026-09-15 19:45:42.792","level":"INFO","thread":"http-nio-8000-exec-10","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/public"}
+{"timestamp":"2026-09-15 19:45:43.971","level":"INFO","thread":"http-nio-8000-exec-10","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/public status=200 durationMs=1181"}
+{"timestamp":"2026-09-15 19:45:56.351","level":"INFO","thread":"http-nio-8000-exec-8","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/public"}
+{"timestamp":"2026-09-15 19:45:57.187","level":"INFO","thread":"http-nio-8000-exec-8","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/public status=200 durationMs=835"}
+{"timestamp":"2026-09-15 19:46:11.390","level":"INFO","thread":"http-nio-8000-exec-4","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/admin"}
+{"timestamp":"2026-09-15 19:46:11.592","level":"INFO","thread":"http-nio-8000-exec-4","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/admin status=200 durationMs=202"}
+{"timestamp":"2026-09-15 19:49:11.363","level":"INFO","thread":"http-nio-8000-exec-2","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/public"}
+{"timestamp":"2026-09-15 19:49:11.378","level":"INFO","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/public"}
+{"timestamp":"2026-09-15 19:49:11.381","level":"INFO","thread":"http-nio-8000-exec-6","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/admin"}
+{"timestamp":"2026-09-15 19:49:11.576","level":"INFO","thread":"http-nio-8000-exec-6","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/admin status=200 durationMs=194"}
+{"timestamp":"2026-09-15 19:49:11.944","level":"INFO","thread":"http-nio-8000-exec-2","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/public status=200 durationMs=580"}
+{"timestamp":"2026-09-15 19:49:11.964","level":"INFO","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/public status=200 durationMs=586"}
+{"timestamp":"2026-09-15 19:51:37.383","level":"INFO","thread":"http-nio-8000-exec-4","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=PATCH uri=/api/companies/1/admin"}
+{"timestamp":"2026-09-15 19:51:37.535","level":"WARN","thread":"http-nio-8000-exec-4","logger":"o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver","message":"Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PATCH' is not supported]"}
+{"timestamp":"2026-09-15 19:51:37.554","level":"ERROR","thread":"http-nio-8000-exec-4","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=PATCH uri=/api/companies/1/admin status=500 durationMs=171"}
+{"timestamp":"2026-09-15 19:51:38.279","level":"WARN","thread":"HikariPool-8:housekeeper","logger":"com.zaxxer.hikari.pool.PoolBase","message":"HikariPool-8 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@65415062 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value."}
+{"timestamp":"2026-09-15 19:52:13.090","level":"INFO","thread":"http-nio-8000-exec-1","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=PATCH uri=/api/companies/1/admin"}
+{"timestamp":"2026-09-15 19:52:13.113","level":"WARN","thread":"http-nio-8000-exec-1","logger":"o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver","message":"Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PATCH' is not supported]"}
+{"timestamp":"2026-09-15 19:52:13.118","level":"ERROR","thread":"http-nio-8000-exec-1","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=PATCH uri=/api/companies/1/admin status=500 durationMs=27"}
+{"timestamp":"2026-09-15 19:52:22.468","level":"INFO","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/public"}
+{"timestamp":"2026-09-15 19:52:22.484","level":"INFO","thread":"http-nio-8000-exec-9","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/public"}
+{"timestamp":"2026-09-15 19:52:22.629","level":"INFO","thread":"http-nio-8000-exec-10","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/admin"}
+{"timestamp":"2026-09-15 19:52:22.642","level":"INFO","thread":"http-nio-8000-exec-8","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/admin"}
+{"timestamp":"2026-09-15 19:52:25.167","level":"INFO","thread":"http-nio-8000-exec-8","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/admin status=200 durationMs=2526"}
+{"timestamp":"2026-09-15 19:52:25.172","level":"INFO","thread":"http-nio-8000-exec-10","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/admin status=200 durationMs=2543"}
+{"timestamp":"2026-09-15 19:52:30.011","level":"INFO","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/public status=200 durationMs=7541"}
+{"timestamp":"2026-09-15 19:52:30.053","level":"INFO","thread":"http-nio-8000-exec-9","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/public status=200 durationMs=7567"}
+{"timestamp":"2026-09-15 19:52:41.348","level":"INFO","thread":"http-nio-8000-exec-4","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=PUT uri=/api/companies/1/admin"}
+{"timestamp":"2026-09-15 19:52:41.785","level":"INFO","thread":"http-nio-8000-exec-4","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_BODY payload={"name":"TechCorp Inc.","logo":"/logos/techcorp.png","industry":"Technology","size":"Large","rating":4.7,"locations":"San Francisco,New York,Austin","founded":2010,"description":"TechCorp Inc. is a leading technology company founded in 2010. We're committed to innovation and creating exceptional experiences for our customers and employees.","employees":15000,"website":"https://www.techcorpinc.com"}"}
+{"timestamp":"2026-09-15 19:52:41.785","level":"INFO","thread":"http-nio-8000-exec-4","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=PUT uri=/api/companies/1/admin status=200 durationMs=435"}
+{"timestamp":"2026-09-15 19:52:41.818","level":"INFO","thread":"http-nio-8000-exec-7","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/admin"}
+{"timestamp":"2026-09-15 19:52:41.946","level":"INFO","thread":"http-nio-8000-exec-7","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/admin status=200 durationMs=127"}
+{"timestamp":"2026-09-15 19:52:51.642","level":"INFO","thread":"http-nio-8000-exec-6","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=PUT uri=/api/companies/1/admin"}
+{"timestamp":"2026-09-15 19:52:51.756","level":"INFO","thread":"http-nio-8000-exec-6","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_BODY payload={"name":"TechCorp Inc.","logo":"/logos/techcorp.png","industry":"Technology","size":"Large","rating":4.7,"locations":"San Francisco,New York,Austin","founded":2012,"description":"TechCorp Inc. is a leading technology company founded in 2010. We're committed to innovation and creating exceptional experiences for our customers and employees.","employees":15000,"website":"https://www.techcorpinc.com"}"}
+{"timestamp":"2026-09-15 19:52:51.759","level":"INFO","thread":"http-nio-8000-exec-6","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=PUT uri=/api/companies/1/admin status=200 durationMs=117"}
+{"timestamp":"2026-09-15 19:52:51.801","level":"INFO","thread":"http-nio-8000-exec-8","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/admin"}
+{"timestamp":"2026-09-15 19:52:51.927","level":"INFO","thread":"http-nio-8000-exec-8","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/admin status=200 durationMs=129"}
+{"timestamp":"2026-09-15 19:52:58.614","level":"INFO","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=DELETE uri=/api/companies/31"}
+{"timestamp":"2026-09-15 19:52:58.666","level":"WARN","thread":"http-nio-8000-exec-5","logger":"o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver","message":"Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/companies/31 for request '/api/companies/31'.]"}
+{"timestamp":"2026-09-15 19:52:58.678","level":"ERROR","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=DELETE uri=/api/companies/31 status=500 durationMs=64"}
+{"timestamp":"2026-09-15 19:54:51.516","level":"INFO","thread":"http-nio-8000-exec-7","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/public"}
+{"timestamp":"2026-09-15 19:54:51.516","level":"INFO","thread":"http-nio-8000-exec-6","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/public"}
+{"timestamp":"2026-09-15 19:54:51.781","level":"INFO","thread":"http-nio-8000-exec-1","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/admin"}
+{"timestamp":"2026-09-15 19:54:51.781","level":"INFO","thread":"http-nio-8000-exec-2","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/admin"}
+{"timestamp":"2026-09-15 19:54:52.910","level":"INFO","thread":"http-nio-8000-exec-2","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/admin status=200 durationMs=1127"}
+{"timestamp":"2026-09-15 19:54:52.913","level":"INFO","thread":"http-nio-8000-exec-1","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/admin status=200 durationMs=1130"}
+{"timestamp":"2026-09-15 19:54:53.673","level":"INFO","thread":"http-nio-8000-exec-7","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/public status=200 durationMs=2157"}
+{"timestamp":"2026-09-15 19:54:53.676","level":"INFO","thread":"http-nio-8000-exec-6","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/public status=200 durationMs=2160"}
+{"timestamp":"2026-09-15 19:55:31.438","level":"INFO","thread":"http-nio-8000-exec-10","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/admin"}
+{"timestamp":"2026-09-15 19:55:31.445","level":"INFO","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/public"}
+{"timestamp":"2026-09-15 19:55:31.586","level":"INFO","thread":"http-nio-8000-exec-10","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/admin status=200 durationMs=147"}
+{"timestamp":"2026-09-15 19:55:32.907","level":"INFO","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/public status=200 durationMs=1462"}
+{"timestamp":"2026-09-15 19:55:32.938","level":"INFO","thread":"http-nio-8000-exec-3","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/admin"}
+{"timestamp":"2026-09-15 19:55:33.066","level":"INFO","thread":"http-nio-8000-exec-3","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/admin status=200 durationMs=126"}
+{"timestamp":"2026-09-15 19:55:54.179","level":"INFO","thread":"http-nio-8000-exec-7","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=DELETE uri=/api/companies/31/admin"}
+{"timestamp":"2026-09-15 19:56:04.451","level":"INFO","thread":"http-nio-8000-exec-7","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=DELETE uri=/api/companies/31/admin status=200 durationMs=10273"}
+{"timestamp":"2026-09-15 19:56:04.717","level":"INFO","thread":"http-nio-8000-exec-8","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/admin"}
+{"timestamp":"2026-09-15 19:56:04.839","level":"INFO","thread":"http-nio-8000-exec-8","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/admin status=200 durationMs=122"}
+{"timestamp":"2026-09-15 19:56:37.990","level":"INFO","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/admin/users/search"}
+{"timestamp":"2026-09-15 19:56:38.251","level":"WARN","thread":"http-nio-8000-exec-5","logger":"o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver","message":"Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/admin/users/search for request '/api/admin/users/search'.]"}
+{"timestamp":"2026-09-15 19:56:38.257","level":"ERROR","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/admin/users/search status=500 durationMs=268"}
+{"timestamp":"2026-09-15 20:06:13.562","level":"INFO","thread":"File Watcher","logger":"o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener","message":"Restarting due to 3 class path changes (0 additions, 3 deletions, 0 modifications)"}
+{"timestamp":"2026-09-15 20:06:13.764","level":"INFO","thread":"Thread-112","logger":"o.s.boot.tomcat.GracefulShutdown","message":"Commencing graceful shutdown. Waiting for active requests to complete"}
+{"timestamp":"2026-09-15 20:06:13.818","level":"INFO","thread":"tomcat-shutdown","logger":"o.a.coyote.http11.Http11NioProtocol","message":"Pausing ProtocolHandler ["http-nio-8000"]"}
+{"timestamp":"2026-09-15 20:06:13.879","level":"INFO","thread":"tomcat-shutdown","logger":"o.s.boot.tomcat.GracefulShutdown","message":"Graceful shutdown complete"}
+{"timestamp":"2026-09-15 20:06:13.896","level":"INFO","thread":"Thread-112","logger":"o.a.coyote.http11.Http11NioProtocol","message":"Stopping ProtocolHandler ["http-nio-8000"]"}
+{"timestamp":"2026-09-15 20:06:14.052","level":"INFO","thread":"Thread-112","logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean","message":"Closing JPA EntityManagerFactory for persistence unit 'default'"}
+{"timestamp":"2026-09-15 20:06:14.177","level":"INFO","thread":"Thread-112","logger":"com.zaxxer.hikari.HikariDataSource","message":"HikariPool-8 - Shutdown initiated..."}
+{"timestamp":"2026-09-15 20:06:14.202","level":"INFO","thread":"Thread-112","logger":"com.zaxxer.hikari.HikariDataSource","message":"HikariPool-8 - Shutdown completed."}
+{"timestamp":"2026-09-15 20:06:17.899","level":"INFO","thread":"restartedMain","logger":"com.jimmy.portal.PortalApplication","message":"Starting PortalApplication using Java 26.0.2.1 with PID 11740 (D:\job-portal-server\target\classes started by JIMMY in D:\job-portal-server)"}
+{"timestamp":"2026-09-15 20:06:17.901","level":"INFO","thread":"restartedMain","logger":"com.jimmy.portal.PortalApplication","message":"No active profile set, falling back to 1 default profile: "default""}
+{"timestamp":"2026-09-15 20:06:17.934","level":"INFO","thread":"restartedMain","logger":"o.s.b.d.c.l.DockerComposeLifecycleManager","message":"Using Docker Compose file D:\job-portal-server\compose.yml"}
+{"timestamp":"2026-09-15 20:06:20.368","level":"INFO","thread":"restartedMain","logger":"o.s.b.d.c.l.DockerComposeLifecycleManager","message":"There are already Docker Compose services running, skipping startup"}
+{"timestamp":"2026-09-15 20:06:22.533","level":"INFO","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode."}
+{"timestamp":"2026-09-15 20:06:22.705","level":"INFO","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","message":"Finished Spring Data repository scanning in 168 ms. Found 4 JPA repository interfaces."}
+{"timestamp":"2026-09-15 20:06:23.519","level":"INFO","thread":"restartedMain","logger":"o.s.boot.tomcat.TomcatWebServer","message":"Tomcat initialized with port 8000 (http)"}
+{"timestamp":"2026-09-15 20:06:23.526","level":"INFO","thread":"restartedMain","logger":"o.a.coyote.http11.Http11NioProtocol","message":"Initializing ProtocolHandler ["http-nio-8000"]"}
+{"timestamp":"2026-09-15 20:06:23.528","level":"INFO","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","message":"Starting service [Tomcat]"}
+{"timestamp":"2026-09-15 20:06:23.530","level":"INFO","thread":"restartedMain","logger":"o.a.catalina.core.StandardEngine","message":"Starting Servlet engine: [Apache Tomcat/11.0.22]"}
+{"timestamp":"2026-09-15 20:06:23.627","level":"INFO","thread":"restartedMain","logger":"o.s.b.w.c.s.WebApplicationContextInitializer","message":"Root WebApplicationContext: initialization completed in 3257 ms"}
+{"timestamp":"2026-09-15 20:06:24.237","level":"INFO","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","message":"HikariPool-9 - Starting..."}
+{"timestamp":"2026-09-15 20:06:24.334","level":"INFO","thread":"restartedMain","logger":"com.zaxxer.hikari.pool.HikariPool","message":"HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@765af32c"}
+{"timestamp":"2026-09-15 20:06:24.335","level":"INFO","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","message":"HikariPool-9 - Start completed."}
+{"timestamp":"2026-09-15 20:06:24.341","level":"INFO","thread":"restartedMain","logger":"org.hibernate.orm.jpa","message":"HHH008540: Processing PersistenceUnitInfo [name: default]"}
+{"timestamp":"2026-09-15 20:06:24.567","level":"INFO","thread":"restartedMain","logger":"o.s.o.j.p.SpringPersistenceUnitInfo","message":"No LoadTimeWeaver setup: ignoring JPA class transformer"}
+{"timestamp":"2026-09-15 20:06:24.592","level":"INFO","thread":"restartedMain","logger":"o.hibernate.orm.connections.pooling","message":"HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://127.0.0.1:3308/jobportal]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.1
+	Default catalog/schema: jobportal/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown"}
+{"timestamp":"2026-09-15 20:06:25.604","level":"INFO","thread":"restartedMain","logger":"org.hibernate.orm.core","message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)"}
+{"timestamp":"2026-09-15 20:06:25.607","level":"INFO","thread":"restartedMain","logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean","message":"Initialized JPA EntityManagerFactory for persistence unit 'default'"}
+{"timestamp":"2026-09-15 20:06:26.586","level":"WARN","thread":"restartedMain","logger":"o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration","message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning"}
+{"timestamp":"2026-09-15 20:06:26.839","level":"INFO","thread":"restartedMain","logger":"o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer","message":"Global AuthenticationManager configured with AuthenticationProvider bean with name jobPortalUsernamePwdAuthenticationProvider"}
+{"timestamp":"2026-09-15 20:06:28.052","level":"INFO","thread":"restartedMain","logger":"o.a.coyote.http11.Http11NioProtocol","message":"Starting ProtocolHandler ["http-nio-8000"]"}
+{"timestamp":"2026-09-15 20:06:28.060","level":"INFO","thread":"restartedMain","logger":"o.s.boot.tomcat.TomcatWebServer","message":"Tomcat started on port 8000 (http) with context path '/'"}
+{"timestamp":"2026-09-15 20:06:28.072","level":"INFO","thread":"restartedMain","logger":"com.jimmy.portal.PortalApplication","message":"Started PortalApplication in 10.832 seconds (process running for 25794.631)"}
+{"timestamp":"2026-09-15 20:06:28.075","level":"WARN","thread":"restartedMain","logger":"o.s.c.events.SpringDocAppInitializer","message":"SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'"}
+{"timestamp":"2026-09-15 20:06:28.075","level":"WARN","thread":"restartedMain","logger":"o.s.c.events.SpringDocAppInitializer","message":"SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'"}
+{"timestamp":"2026-09-15 20:06:28.078","level":"INFO","thread":"restartedMain","logger":"o.s.b.d.a.ConditionEvaluationDeltaLoggingListener","message":"Condition evaluation unchanged"}
+{"timestamp":"2026-09-15 20:06:29.373","level":"INFO","thread":"File Watcher","logger":"o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener","message":"Restarting due to 6 class path changes (6 additions, 0 deletions, 0 modifications)"}
+{"timestamp":"2026-09-15 20:06:29.377","level":"INFO","thread":"Thread-124","logger":"o.s.boot.tomcat.GracefulShutdown","message":"Commencing graceful shutdown. Waiting for active requests to complete"}
+{"timestamp":"2026-09-15 20:06:29.380","level":"INFO","thread":"tomcat-shutdown","logger":"o.a.coyote.http11.Http11NioProtocol","message":"Pausing ProtocolHandler ["http-nio-8000"]"}
+{"timestamp":"2026-09-15 20:06:29.403","level":"INFO","thread":"tomcat-shutdown","logger":"o.s.boot.tomcat.GracefulShutdown","message":"Graceful shutdown complete"}
+{"timestamp":"2026-09-15 20:06:29.404","level":"INFO","thread":"Thread-124","logger":"o.a.coyote.http11.Http11NioProtocol","message":"Stopping ProtocolHandler ["http-nio-8000"]"}
+{"timestamp":"2026-09-15 20:06:29.408","level":"INFO","thread":"Thread-124","logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean","message":"Closing JPA EntityManagerFactory for persistence unit 'default'"}
+{"timestamp":"2026-09-15 20:06:29.411","level":"INFO","thread":"Thread-124","logger":"com.zaxxer.hikari.HikariDataSource","message":"HikariPool-9 - Shutdown initiated..."}
+{"timestamp":"2026-09-15 20:06:29.429","level":"INFO","thread":"Thread-124","logger":"com.zaxxer.hikari.HikariDataSource","message":"HikariPool-9 - Shutdown completed."}
+{"timestamp":"2026-09-15 20:06:29.802","level":"INFO","thread":"restartedMain","logger":"com.jimmy.portal.PortalApplication","message":"Starting PortalApplication using Java 26.0.2.1 with PID 11740 (D:\job-portal-server\target\classes started by JIMMY in D:\job-portal-server)"}
+{"timestamp":"2026-09-15 20:06:29.803","level":"INFO","thread":"restartedMain","logger":"com.jimmy.portal.PortalApplication","message":"No active profile set, falling back to 1 default profile: "default""}
+{"timestamp":"2026-09-15 20:06:29.812","level":"INFO","thread":"restartedMain","logger":"o.s.b.d.c.l.DockerComposeLifecycleManager","message":"Using Docker Compose file D:\job-portal-server\compose.yml"}
+{"timestamp":"2026-09-15 20:06:31.279","level":"INFO","thread":"restartedMain","logger":"o.s.b.d.c.l.DockerComposeLifecycleManager","message":"There are already Docker Compose services running, skipping startup"}
+{"timestamp":"2026-09-15 20:06:32.398","level":"INFO","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","message":"Bootstrapping Spring Data JPA repositories in DEFAULT mode."}
+{"timestamp":"2026-09-15 20:06:32.461","level":"INFO","thread":"restartedMain","logger":"o.s.d.r.c.RepositoryConfigurationDelegate","message":"Finished Spring Data repository scanning in 60 ms. Found 4 JPA repository interfaces."}
+{"timestamp":"2026-09-15 20:06:32.932","level":"INFO","thread":"restartedMain","logger":"o.s.boot.tomcat.TomcatWebServer","message":"Tomcat initialized with port 8000 (http)"}
+{"timestamp":"2026-09-15 20:06:32.935","level":"INFO","thread":"restartedMain","logger":"o.a.coyote.http11.Http11NioProtocol","message":"Initializing ProtocolHandler ["http-nio-8000"]"}
+{"timestamp":"2026-09-15 20:06:32.936","level":"INFO","thread":"restartedMain","logger":"o.a.catalina.core.StandardService","message":"Starting service [Tomcat]"}
+{"timestamp":"2026-09-15 20:06:32.937","level":"INFO","thread":"restartedMain","logger":"o.a.catalina.core.StandardEngine","message":"Starting Servlet engine: [Apache Tomcat/11.0.22]"}
+{"timestamp":"2026-09-15 20:06:32.999","level":"INFO","thread":"restartedMain","logger":"o.s.b.w.c.s.WebApplicationContextInitializer","message":"Root WebApplicationContext: initialization completed in 1718 ms"}
+{"timestamp":"2026-09-15 20:06:33.389","level":"INFO","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","message":"HikariPool-10 - Starting..."}
+{"timestamp":"2026-09-15 20:06:33.444","level":"INFO","thread":"restartedMain","logger":"com.zaxxer.hikari.pool.HikariPool","message":"HikariPool-10 - Added connection com.mysql.cj.jdbc.ConnectionImpl@a63ab61"}
+{"timestamp":"2026-09-15 20:06:33.444","level":"INFO","thread":"restartedMain","logger":"com.zaxxer.hikari.HikariDataSource","message":"HikariPool-10 - Start completed."}
+{"timestamp":"2026-09-15 20:06:33.447","level":"INFO","thread":"restartedMain","logger":"org.hibernate.orm.jpa","message":"HHH008540: Processing PersistenceUnitInfo [name: default]"}
+{"timestamp":"2026-09-15 20:06:33.504","level":"INFO","thread":"restartedMain","logger":"o.s.o.j.p.SpringPersistenceUnitInfo","message":"No LoadTimeWeaver setup: ignoring JPA class transformer"}
+{"timestamp":"2026-09-15 20:06:33.514","level":"INFO","thread":"restartedMain","logger":"o.hibernate.orm.connections.pooling","message":"HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://127.0.0.1:3308/jobportal]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.1
+	Default catalog/schema: jobportal/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown"}
+{"timestamp":"2026-09-15 20:06:34.128","level":"INFO","thread":"restartedMain","logger":"org.hibernate.orm.core","message":"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)"}
+{"timestamp":"2026-09-15 20:06:34.132","level":"INFO","thread":"restartedMain","logger":"o.s.o.j.LocalContainerEntityManagerFactoryBean","message":"Initialized JPA EntityManagerFactory for persistence unit 'default'"}
+{"timestamp":"2026-09-15 20:06:35.137","level":"WARN","thread":"restartedMain","logger":"o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration","message":"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning"}
+{"timestamp":"2026-09-15 20:06:35.339","level":"INFO","thread":"restartedMain","logger":"o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer","message":"Global AuthenticationManager configured with AuthenticationProvider bean with name jobPortalUsernamePwdAuthenticationProvider"}
+{"timestamp":"2026-09-15 20:06:36.475","level":"INFO","thread":"restartedMain","logger":"o.a.coyote.http11.Http11NioProtocol","message":"Starting ProtocolHandler ["http-nio-8000"]"}
+{"timestamp":"2026-09-15 20:06:36.486","level":"INFO","thread":"restartedMain","logger":"o.s.boot.tomcat.TomcatWebServer","message":"Tomcat started on port 8000 (http) with context path '/'"}
+{"timestamp":"2026-09-15 20:06:36.493","level":"INFO","thread":"restartedMain","logger":"com.jimmy.portal.PortalApplication","message":"Started PortalApplication in 6.776 seconds (process running for 25803.052)"}
+{"timestamp":"2026-09-15 20:06:36.495","level":"WARN","thread":"restartedMain","logger":"o.s.c.events.SpringDocAppInitializer","message":"SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'"}
+{"timestamp":"2026-09-15 20:06:36.495","level":"WARN","thread":"restartedMain","logger":"o.s.c.events.SpringDocAppInitializer","message":"SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'"}
+{"timestamp":"2026-09-15 20:06:36.497","level":"INFO","thread":"restartedMain","logger":"o.s.b.d.a.ConditionEvaluationDeltaLoggingListener","message":"Condition evaluation unchanged"}
+{"timestamp":"2026-09-15 20:07:13.062","level":"INFO","thread":"http-nio-8000-exec-2","logger":"o.a.c.c.C.[Tomcat-1].[localhost].[/]","message":"Initializing Spring DispatcherServlet 'dispatcherServlet'"}
+{"timestamp":"2026-09-15 20:07:13.065","level":"INFO","thread":"http-nio-8000-exec-2","logger":"o.s.web.servlet.DispatcherServlet","message":"Initializing Servlet 'dispatcherServlet'"}
+{"timestamp":"2026-09-15 20:07:13.073","level":"INFO","thread":"http-nio-8000-exec-2","logger":"o.s.web.servlet.DispatcherServlet","message":"Completed initialization in 8 ms"}
+{"timestamp":"2026-09-15 20:07:13.091","level":"INFO","thread":"http-nio-8000-exec-1","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/public"}
+{"timestamp":"2026-09-15 20:07:13.091","level":"INFO","thread":"http-nio-8000-exec-2","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/public"}
+{"timestamp":"2026-09-15 20:07:13.226","level":"INFO","thread":"http-nio-8000-exec-3","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/admin/users/search"}
+{"timestamp":"2026-09-15 20:07:13.465","level":"WARN","thread":"http-nio-8000-exec-3","logger":"o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver","message":"Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/admin/users/search for request '/api/admin/users/search'.]"}
+{"timestamp":"2026-09-15 20:07:13.469","level":"ERROR","thread":"http-nio-8000-exec-3","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/admin/users/search status=500 durationMs=242"}
+{"timestamp":"2026-09-15 20:07:22.632","level":"INFO","thread":"http-nio-8000-exec-2","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/public status=200 durationMs=9540"}
+{"timestamp":"2026-09-15 20:07:22.634","level":"INFO","thread":"http-nio-8000-exec-1","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/public status=200 durationMs=9542"}
+{"timestamp":"2026-09-15 20:11:26.355","level":"INFO","thread":"http-nio-8000-exec-6","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/public"}
+{"timestamp":"2026-09-15 20:11:26.355","level":"INFO","thread":"http-nio-8000-exec-7","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/public"}
+{"timestamp":"2026-09-15 20:11:27.411","level":"INFO","thread":"http-nio-8000-exec-7","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/public status=200 durationMs=1056"}
+{"timestamp":"2026-09-15 20:11:27.438","level":"INFO","thread":"http-nio-8000-exec-6","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/public status=200 durationMs=1084"}
+{"timestamp":"2026-09-15 20:12:36.921","level":"INFO","thread":"http-nio-8000-exec-3","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/users/search/admin"}
+{"timestamp":"2026-09-15 20:12:37.094","level":"WARN","thread":"http-nio-8000-exec-3","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/users/search/admin status=404 durationMs=174"}
+{"timestamp":"2026-09-15 20:13:34.884","level":"INFO","thread":"http-nio-8000-exec-1","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/users/search/admin"}
+{"timestamp":"2026-09-15 20:13:34.955","level":"WARN","thread":"http-nio-8000-exec-1","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/users/search/admin status=404 durationMs=69"}
+{"timestamp":"2026-09-15 20:13:38.113","level":"INFO","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/users/search/admin"}
+{"timestamp":"2026-09-15 20:13:38.190","level":"WARN","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/users/search/admin status=404 durationMs=74"}
+{"timestamp":"2026-09-15 20:16:20.813","level":"INFO","thread":"http-nio-8000-exec-8","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/users/search/admin"}
+{"timestamp":"2026-09-15 20:16:21.273","level":"INFO","thread":"http-nio-8000-exec-8","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/users/search/admin status=200 durationMs=461"}
+{"timestamp":"2026-09-15 20:16:27.700","level":"INFO","thread":"http-nio-8000-exec-9","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/public"}
+{"timestamp":"2026-09-15 20:16:27.706","level":"INFO","thread":"http-nio-8000-exec-10","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/public"}
+{"timestamp":"2026-09-15 20:16:28.978","level":"INFO","thread":"http-nio-8000-exec-2","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/users/search/admin"}
+{"timestamp":"2026-09-15 20:16:29.190","level":"INFO","thread":"http-nio-8000-exec-10","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/public status=200 durationMs=1483"}
+{"timestamp":"2026-09-15 20:16:29.194","level":"INFO","thread":"http-nio-8000-exec-9","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/public status=200 durationMs=1494"}
+{"timestamp":"2026-09-15 20:16:29.449","level":"WARN","thread":"http-nio-8000-exec-2","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/users/search/admin status=404 durationMs=470"}
+{"timestamp":"2026-09-15 20:16:43.762","level":"INFO","thread":"http-nio-8000-exec-4","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/users/search/admin"}
+{"timestamp":"2026-09-15 20:16:43.832","level":"INFO","thread":"http-nio-8000-exec-4","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/users/search/admin status=200 durationMs=69"}
+{"timestamp":"2026-09-15 20:16:53.466","level":"INFO","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=PUT uri=/api/admin/users/11/elevate-to-employer"}
+{"timestamp":"2026-09-15 20:16:53.616","level":"WARN","thread":"http-nio-8000-exec-5","logger":"o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver","message":"Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/admin/users/11/elevate-to-employer for request '/api/admin/users/11/elevate-to-employer'.]"}
+{"timestamp":"2026-09-15 20:16:53.618","level":"ERROR","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=PUT uri=/api/admin/users/11/elevate-to-employer status=500 durationMs=151"}
+{"timestamp":"2026-09-15 20:19:54.320","level":"INFO","thread":"http-nio-8000-exec-8","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/public"}
+{"timestamp":"2026-09-15 20:19:54.297","level":"INFO","thread":"http-nio-8000-exec-3","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/public"}
+{"timestamp":"2026-09-15 20:19:58.021","level":"INFO","thread":"http-nio-8000-exec-9","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/users/search/admin"}
+{"timestamp":"2026-09-15 20:19:58.623","level":"WARN","thread":"http-nio-8000-exec-9","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/users/search/admin status=404 durationMs=600"}
+{"timestamp":"2026-09-15 20:19:59.219","level":"INFO","thread":"http-nio-8000-exec-3","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/public status=200 durationMs=4923"}
+{"timestamp":"2026-09-15 20:19:59.538","level":"INFO","thread":"http-nio-8000-exec-8","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/public status=200 durationMs=5217"}
+{"timestamp":"2026-09-15 20:20:05.576","level":"INFO","thread":"http-nio-8000-exec-1","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/users/search/admin"}
+{"timestamp":"2026-09-15 20:20:06.561","level":"INFO","thread":"http-nio-8000-exec-1","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/users/search/admin status=200 durationMs=984"}
+{"timestamp":"2026-09-15 20:20:15.408","level":"INFO","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=PATCH uri=/api/users/11/role/employer/admin"}
+{"timestamp":"2026-09-15 20:20:22.478","level":"INFO","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=PATCH uri=/api/users/11/role/employer/admin status=200 durationMs=7070"}
+{"timestamp":"2026-09-15 20:20:34.770","level":"INFO","thread":"http-nio-8000-exec-6","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=PUT uri=/api/admin/users/11/assign-company"}
+{"timestamp":"2026-09-15 20:20:34.884","level":"WARN","thread":"http-nio-8000-exec-6","logger":"o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver","message":"Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/admin/users/11/assign-company for request '/api/admin/users/11/assign-company'.]"}
+{"timestamp":"2026-09-15 20:20:34.896","level":"ERROR","thread":"http-nio-8000-exec-6","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=PUT uri=/api/admin/users/11/assign-company status=500 durationMs=126"}
+{"timestamp":"2026-09-15 20:22:14.709","level":"INFO","thread":"http-nio-8000-exec-8","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/public"}
+{"timestamp":"2026-09-15 20:22:14.709","level":"INFO","thread":"http-nio-8000-exec-3","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/public"}
+{"timestamp":"2026-09-15 20:22:16.203","level":"INFO","thread":"http-nio-8000-exec-3","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/public status=200 durationMs=1496"}
+{"timestamp":"2026-09-15 20:22:16.203","level":"INFO","thread":"http-nio-8000-exec-8","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/public status=200 durationMs=1496"}
+{"timestamp":"2026-09-15 20:23:03.969","level":"INFO","thread":"http-nio-8000-exec-1","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/users/search/admin"}
+{"timestamp":"2026-09-15 20:23:04.782","level":"INFO","thread":"http-nio-8000-exec-1","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/users/search/admin status=200 durationMs=813"}
+{"timestamp":"2026-09-15 20:23:08.710","level":"INFO","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=PATCH uri=/api/users/11/company/9/admin"}
+{"timestamp":"2026-09-15 20:23:09.186","level":"INFO","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=PATCH uri=/api/users/11/company/9/admin status=200 durationMs=476"}
+{"timestamp":"2026-09-15 20:24:42.559","level":"INFO","thread":"http-nio-8000-exec-8","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/contacts/page/admin"}
+{"timestamp":"2026-09-15 20:24:42.559","level":"INFO","thread":"http-nio-8000-exec-3","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/contacts/page/admin"}
+{"timestamp":"2026-09-15 20:24:43.331","level":"WARN","thread":"http-nio-8000-exec-8","logger":"o.s.d.w.c.SpringDataJackson3Configuration$PageModule$WarningLoggingModifier","message":"Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+"}
+{"timestamp":"2026-09-15 20:24:43.392","level":"INFO","thread":"http-nio-8000-exec-8","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/contacts/page/admin status=200 durationMs=833"}
+{"timestamp":"2026-09-15 20:24:43.392","level":"INFO","thread":"http-nio-8000-exec-3","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/contacts/page/admin status=200 durationMs=833"}
+{"timestamp":"2026-09-15 20:24:49.840","level":"INFO","thread":"http-nio-8000-exec-4","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/admin"}
+{"timestamp":"2026-09-15 20:24:49.851","level":"INFO","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/admin"}
+{"timestamp":"2026-09-15 20:24:50.015","level":"INFO","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/admin status=200 durationMs=166"}
+{"timestamp":"2026-09-15 20:24:50.018","level":"INFO","thread":"http-nio-8000-exec-4","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/admin status=200 durationMs=178"}
+{"timestamp":"2026-09-15 20:24:59.733","level":"INFO","thread":"http-nio-8000-exec-6","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=PUT uri=/api/companies/30/admin"}
+{"timestamp":"2026-09-15 20:25:00.178","level":"INFO","thread":"http-nio-8000-exec-6","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_BODY payload={"name":"Figma","logo":"/logos/figma.png","industry":"Technology","size":"Medium","rating":4.8,"locations":"San Francisco,New York,London","founded":2012,"description":"Figma is a leading technology company founded in 2012. We're committed to innovation and creating exceptional experiences for our customers and employees.","employees":1000,"website":"https://www.figma.com"}"}
+{"timestamp":"2026-09-15 20:25:00.178","level":"INFO","thread":"http-nio-8000-exec-6","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=PUT uri=/api/companies/30/admin status=200 durationMs=445"}
+{"timestamp":"2026-09-15 20:25:00.242","level":"INFO","thread":"http-nio-8000-exec-6","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_STARTED method=GET uri=/api/companies/admin"}
+{"timestamp":"2026-09-15 20:25:00.349","level":"INFO","thread":"http-nio-8000-exec-6","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/companies/admin status=200 durationMs=102"}
