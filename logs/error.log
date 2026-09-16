@@ -141,3 +141,33 @@ Caused by: java.io.FileNotFoundException: class path resource [com/jimmy/portal/
 {"timestamp":"2026-09-15 20:07:13.469","level":"ERROR","thread":"http-nio-8000-exec-3","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/admin/users/search status=500 durationMs=242"}
 {"timestamp":"2026-09-15 20:16:53.618","level":"ERROR","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=PUT uri=/api/admin/users/11/elevate-to-employer status=500 durationMs=151"}
 {"timestamp":"2026-09-15 20:20:34.896","level":"ERROR","thread":"http-nio-8000-exec-6","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=PUT uri=/api/admin/users/11/assign-company status=500 durationMs=126"}
+{"timestamp":"2026-09-15 20:37:48.196","level":"ERROR","thread":"restartedMain","logger":"o.s.b.d.LoggingFailureAnalysisReporter","message":"
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.jimmy.portal.aspects.RegisterValidationAspect required a bean of type 'org.springframework.security.authentication.password.CompromisedPasswordChecker' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.authentication.password.CompromisedPasswordChecker' in your configuration.
+"}
+{"timestamp":"2026-09-15 20:41:46.739","level":"ERROR","thread":"restartedMain","logger":"o.s.b.d.LoggingFailureAnalysisReporter","message":"
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.jimmy.portal.aspects.RegisterValidationAspect required a bean of type 'org.springframework.security.authentication.password.CompromisedPasswordChecker' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.authentication.password.CompromisedPasswordChecker' in your configuration.
+"}

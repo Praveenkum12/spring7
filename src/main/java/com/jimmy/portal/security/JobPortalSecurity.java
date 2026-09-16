@@ -90,7 +90,7 @@ public class JobPortalSecurity {
 
         http.cors(corsConfig -> corsConfig.configurationSource(corsConfigurationSource()));
         http.csrf(AbstractHttpConfigurer::disable);
-        http.httpBasic(Customizer.withDefaults());
+        http.httpBasic(AbstractHttpConfigurer::disable);
         http.formLogin(AbstractHttpConfigurer::disable);
         return http.build();
     }
