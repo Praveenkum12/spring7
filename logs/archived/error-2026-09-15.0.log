@@ -1,0 +1,173 @@
+{"timestamp":"2026-09-15 13:31:16.280","level":"ERROR","thread":"restartedMain","logger":"o.s.b.d.LoggingFailureAnalysisReporter","message":"
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean named 'auditorAwareImpl' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'auditorAwareImpl' in your configuration.
+"}
+{"timestamp":"2026-09-15 13:47:57.901","level":"ERROR","thread":"http-nio-8000-exec-1","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"❌ Exception occurred in method: JobPortalUsernamePwdAuthenticationProvider.authenticate(..)"}
+{"timestamp":"2026-09-15 13:47:57.904","level":"ERROR","thread":"http-nio-8000-exec-1","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"📥 Arguments: [UsernamePasswordAuthenticationToken [Principal=df@gmail.com, Credentials=[PROTECTED], Authenticated=false, Details=null, Granted Authorities=[]]]"}
+{"timestamp":"2026-09-15 13:47:57.910","level":"ERROR","thread":"http-nio-8000-exec-1","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"💥 Exception type: UsernameNotFoundException"}
+{"timestamp":"2026-09-15 13:47:57.911","level":"ERROR","thread":"http-nio-8000-exec-1","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"🧾 Exception message: User details not found for the user: df@gmail.com"}
+{"timestamp":"2026-09-15 14:56:32.778","level":"ERROR","thread":"restartedMain","logger":"o.s.boot.SpringApplication","message":"Application run failed"}
+org.springframework.beans.factory.BeanDefinitionStoreException: I/O failure while processing configuration class [com.jimmy.portal.company.mapper.CompanyMapperImpl]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:290)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:220)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:357)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:285)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:206)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:174)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:452)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:316)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:795)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:603)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.jimmy.portal.PortalApplication.main(PortalApplication.java:12)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52)
+Caused by: java.io.FileNotFoundException: class path resource [com/jimmy/portal/company/mapper/CompanyMapper.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:212)
+	at org.springframework.core.type.classreading.ClassFileMetadataReader.parseClassModel(ClassFileMetadataReader.java:49)
+	at org.springframework.core.type.classreading.ClassFileMetadataReader.<init>(ClassFileMetadataReader.java:45)
+	at org.springframework.core.type.classreading.ClassFileMetadataReaderFactory.getMetadataReader(ClassFileMetadataReaderFactory.java:62)
+	at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:127)
+	at org.springframework.core.type.classreading.AbstractMetadataReaderFactory.getMetadataReader(AbstractMetadataReaderFactory.java:62)
+	at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:40)
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:730)
+	at org.springframework.context.annotation.ConfigurationClassParser$SourceClass.getInterfaces(ConfigurationClassParser.java:1076)
+	at org.springframework.context.annotation.ConfigurationClassParser.collectImports(ConfigurationClassParser.java:568)
+	at org.springframework.context.annotation.ConfigurationClassParser.getImports(ConfigurationClassParser.java:543)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:364)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:285)
+	... 21 common frames omitted
+{"timestamp":"2026-09-15 19:08:52.487","level":"ERROR","thread":"http-nio-8000-exec-1","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"❌ Exception occurred in method: AuthController.registerUser(..)"}
+{"timestamp":"2026-09-15 19:08:52.798","level":"ERROR","thread":"http-nio-8000-exec-1","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"📥 Arguments: [RegisterRequestDto[name=Sanjay, email=testing@gmai.com, mobileNumber=9483905234, password=test@123]]"}
+{"timestamp":"2026-09-15 19:08:52.798","level":"ERROR","thread":"http-nio-8000-exec-1","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"💥 Exception type: RegistrationValidationException"}
+{"timestamp":"2026-09-15 19:08:52.798","level":"ERROR","thread":"http-nio-8000-exec-1","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"🧾 Exception message: Registration validation failed"}
+{"timestamp":"2026-09-15 19:08:52.953","level":"ERROR","thread":"http-nio-8000-exec-1","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=POST uri=/api/auth/register/public status=500 durationMs=3292"}
+{"timestamp":"2026-09-15 19:09:10.208","level":"ERROR","thread":"http-nio-8000-exec-7","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"❌ Exception occurred in method: AuthController.registerUser(..)"}
+{"timestamp":"2026-09-15 19:09:10.209","level":"ERROR","thread":"http-nio-8000-exec-7","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"📥 Arguments: [RegisterRequestDto[name=Sanjay, email=testing@gmai.com, mobileNumber=9483905234, password=test@123]]"}
+{"timestamp":"2026-09-15 19:09:10.209","level":"ERROR","thread":"http-nio-8000-exec-7","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"💥 Exception type: RegistrationValidationException"}
+{"timestamp":"2026-09-15 19:09:10.211","level":"ERROR","thread":"http-nio-8000-exec-7","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"🧾 Exception message: Registration validation failed"}
+{"timestamp":"2026-09-15 19:09:10.232","level":"ERROR","thread":"http-nio-8000-exec-7","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=POST uri=/api/auth/register/public status=500 durationMs=202"}
+{"timestamp":"2026-09-15 19:11:03.163","level":"ERROR","thread":"http-nio-8000-exec-8","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"❌ Exception occurred in method: AuthController.registerUser(..)"}
+{"timestamp":"2026-09-15 19:11:03.167","level":"ERROR","thread":"http-nio-8000-exec-8","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"📥 Arguments: [RegisterRequestDto[name=Sanjay, email=testing@gmai.com, mobileNumber=9483905234, password=testing@123]]"}
+{"timestamp":"2026-09-15 19:11:03.172","level":"ERROR","thread":"http-nio-8000-exec-8","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"💥 Exception type: RegistrationValidationException"}
+{"timestamp":"2026-09-15 19:11:03.172","level":"ERROR","thread":"http-nio-8000-exec-8","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"🧾 Exception message: Registration validation failed"}
+{"timestamp":"2026-09-15 19:11:03.403","level":"ERROR","thread":"http-nio-8000-exec-8","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=POST uri=/api/auth/register/public status=500 durationMs=1447"}
+{"timestamp":"2026-09-15 19:11:29.755","level":"ERROR","thread":"http-nio-8000-exec-9","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"❌ Exception occurred in method: AuthController.registerUser(..)"}
+{"timestamp":"2026-09-15 19:11:29.765","level":"ERROR","thread":"http-nio-8000-exec-9","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"📥 Arguments: [RegisterRequestDto[name=Sanjay, email=testing@gmai.com, mobileNumber=9483905234, password=tester123$]]"}
+{"timestamp":"2026-09-15 19:11:29.768","level":"ERROR","thread":"http-nio-8000-exec-9","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"💥 Exception type: RegistrationValidationException"}
+{"timestamp":"2026-09-15 19:11:29.769","level":"ERROR","thread":"http-nio-8000-exec-9","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"🧾 Exception message: Registration validation failed"}
+{"timestamp":"2026-09-15 19:11:29.865","level":"ERROR","thread":"http-nio-8000-exec-9","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=POST uri=/api/auth/register/public status=500 durationMs=328"}
+{"timestamp":"2026-09-15 19:12:59.368","level":"ERROR","thread":"restartedMain","logger":"o.s.boot.SpringApplication","message":"Application run failed"}
+org.springframework.beans.factory.BeanDefinitionStoreException: I/O failure while processing configuration class [com.jimmy.portal.company.mapper.CompanyMapperImpl]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:290)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:220)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:357)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:285)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:206)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:174)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:452)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:316)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:795)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:603)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.jimmy.portal.PortalApplication.main(PortalApplication.java:12)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52)
+Caused by: java.io.FileNotFoundException: class path resource [com/jimmy/portal/company/mapper/CompanyMapper.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:212)
+	at org.springframework.core.type.classreading.ClassFileMetadataReader.parseClassModel(ClassFileMetadataReader.java:49)
+	at org.springframework.core.type.classreading.ClassFileMetadataReader.<init>(ClassFileMetadataReader.java:45)
+	at org.springframework.core.type.classreading.ClassFileMetadataReaderFactory.getMetadataReader(ClassFileMetadataReaderFactory.java:62)
+	at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:127)
+	at org.springframework.core.type.classreading.AbstractMetadataReaderFactory.getMetadataReader(AbstractMetadataReaderFactory.java:62)
+	at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:40)
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:730)
+	at org.springframework.context.annotation.ConfigurationClassParser$SourceClass.getInterfaces(ConfigurationClassParser.java:1076)
+	at org.springframework.context.annotation.ConfigurationClassParser.collectImports(ConfigurationClassParser.java:568)
+	at org.springframework.context.annotation.ConfigurationClassParser.getImports(ConfigurationClassParser.java:543)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:364)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:285)
+	... 21 common frames omitted
+{"timestamp":"2026-09-15 19:13:26.961","level":"ERROR","thread":"http-nio-8000-exec-5","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"❌ Exception occurred in method: AuthController.registerUser(..)"}
+{"timestamp":"2026-09-15 19:13:27.015","level":"ERROR","thread":"http-nio-8000-exec-5","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"📥 Arguments: [RegisterRequestDto[name=Sanjay, email=testing@gmai.com, mobileNumber=9483905234, password=tester123$]]"}
+{"timestamp":"2026-09-15 19:13:27.017","level":"ERROR","thread":"http-nio-8000-exec-5","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"💥 Exception type: RegistrationValidationException"}
+{"timestamp":"2026-09-15 19:13:27.026","level":"ERROR","thread":"http-nio-8000-exec-5","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"🧾 Exception message: Registration validation failed"}
+{"timestamp":"2026-09-15 19:13:27.147","level":"ERROR","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=POST uri=/api/auth/register/public status=500 durationMs=825"}
+{"timestamp":"2026-09-15 19:14:28.534","level":"ERROR","thread":"http-nio-8000-exec-2","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"❌ Exception occurred in method: AuthController.registerUser(..)"}
+{"timestamp":"2026-09-15 19:14:28.534","level":"ERROR","thread":"http-nio-8000-exec-2","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"📥 Arguments: [RegisterRequestDto[name=Sanjay, email=testing@gmai.com, mobileNumber=9483905234, password=praveen123$]]"}
+{"timestamp":"2026-09-15 19:14:28.534","level":"ERROR","thread":"http-nio-8000-exec-2","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"💥 Exception type: RegistrationValidationException"}
+{"timestamp":"2026-09-15 19:14:28.534","level":"ERROR","thread":"http-nio-8000-exec-2","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"🧾 Exception message: Registration validation failed"}
+{"timestamp":"2026-09-15 19:14:28.540","level":"ERROR","thread":"http-nio-8000-exec-2","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=POST uri=/api/auth/register/public status=500 durationMs=1636"}
+{"timestamp":"2026-09-15 19:17:09.613","level":"ERROR","thread":"http-nio-8000-exec-2","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"❌ Exception occurred in method: AuthController.registerUser(..)"}
+{"timestamp":"2026-09-15 19:17:09.658","level":"ERROR","thread":"http-nio-8000-exec-2","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"📥 Arguments: [RegisterRequestDto[name=Sanjay, email=testing@gmai.com, mobileNumber=9483905234, password=12345678]]"}
+{"timestamp":"2026-09-15 19:17:09.660","level":"ERROR","thread":"http-nio-8000-exec-2","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"💥 Exception type: RegistrationValidationException"}
+{"timestamp":"2026-09-15 19:17:09.660","level":"ERROR","thread":"http-nio-8000-exec-2","logger":"c.j.p.aspects.ExceptionAuditAspect","message":"🧾 Exception message: Registration validation failed"}
+{"timestamp":"2026-09-15 19:17:09.776","level":"ERROR","thread":"http-nio-8000-exec-2","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=POST uri=/api/auth/register/public status=500 durationMs=1995"}
+{"timestamp":"2026-09-15 19:19:20.982","level":"ERROR","thread":"http-nio-8000-exec-3","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=PUT uri=/api/companies/1 status=500 durationMs=77"}
+{"timestamp":"2026-09-15 19:19:31.014","level":"ERROR","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=PUT uri=/api/companies/1 status=500 durationMs=36"}
+{"timestamp":"2026-09-15 19:32:55.651","level":"ERROR","thread":"http-nio-8000-exec-4","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=PATCH uri=/api/companies/1/admin status=500 durationMs=257"}
+{"timestamp":"2026-09-15 19:36:25.273","level":"ERROR","thread":"http-nio-8000-exec-1","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=POST uri=/api/companies/public status=500 durationMs=124"}
+{"timestamp":"2026-09-15 19:51:37.554","level":"ERROR","thread":"http-nio-8000-exec-4","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=PATCH uri=/api/companies/1/admin status=500 durationMs=171"}
+{"timestamp":"2026-09-15 19:52:13.118","level":"ERROR","thread":"http-nio-8000-exec-1","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=PATCH uri=/api/companies/1/admin status=500 durationMs=27"}
+{"timestamp":"2026-09-15 19:52:58.678","level":"ERROR","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=DELETE uri=/api/companies/31 status=500 durationMs=64"}
+{"timestamp":"2026-09-15 19:56:38.257","level":"ERROR","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/admin/users/search status=500 durationMs=268"}
+{"timestamp":"2026-09-15 20:07:13.469","level":"ERROR","thread":"http-nio-8000-exec-3","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=GET uri=/api/admin/users/search status=500 durationMs=242"}
+{"timestamp":"2026-09-15 20:16:53.618","level":"ERROR","thread":"http-nio-8000-exec-5","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=PUT uri=/api/admin/users/11/elevate-to-employer status=500 durationMs=151"}
+{"timestamp":"2026-09-15 20:20:34.896","level":"ERROR","thread":"http-nio-8000-exec-6","logger":"c.j.p.logging.RequestLoggingFilter","message":"HTTP_REQUEST_COMPLETED method=PUT uri=/api/admin/users/11/assign-company status=500 durationMs=126"}
+{"timestamp":"2026-09-15 20:37:48.196","level":"ERROR","thread":"restartedMain","logger":"o.s.b.d.LoggingFailureAnalysisReporter","message":"
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.jimmy.portal.aspects.RegisterValidationAspect required a bean of type 'org.springframework.security.authentication.password.CompromisedPasswordChecker' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.authentication.password.CompromisedPasswordChecker' in your configuration.
+"}
+{"timestamp":"2026-09-15 20:41:46.739","level":"ERROR","thread":"restartedMain","logger":"o.s.b.d.LoggingFailureAnalysisReporter","message":"
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.jimmy.portal.aspects.RegisterValidationAspect required a bean of type 'org.springframework.security.authentication.password.CompromisedPasswordChecker' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.authentication.password.CompromisedPasswordChecker' in your configuration.
+"}

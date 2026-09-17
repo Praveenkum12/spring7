@@ -1,6 +1,8 @@
 package com.jimmy.portal.company.repository;
 
 import com.jimmy.portal.company.entity.Company;
+import org.jspecify.annotations.NonNull;
+import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
@@ -12,6 +14,13 @@ import java.math.BigDecimal;
 @Repository
 public interface CompanyRepository extends JpaRepository<Company, Long> {
 
+    @CacheEvict(value = "companies", allEntries = true)
+    void deleteById(Long id);
+
+    @CacheEvict(value = "companies", allEntries = true)
+    Company save(Company entity);
+
+    @CacheEvict(value = "companies", allEntries = true)
     @Modifying(clearAutomatically = true, flushAutomatically = true)
     @Query("""
     UPDATE Company c

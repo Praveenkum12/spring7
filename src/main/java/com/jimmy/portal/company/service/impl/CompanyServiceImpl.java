@@ -6,6 +6,7 @@ import com.jimmy.portal.company.repository.CompanyRepository;
 import com.jimmy.portal.company.entity.Company;
 import com.jimmy.portal.company.service.ICompanyService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -25,6 +26,7 @@ public class CompanyServiceImpl implements ICompanyService {
         return companyRepository.findAll().stream().map(companyMapper::toDto).toList();
     }
 
+    @Cacheable("companies")
     @Override
     public List<CompanyDto> getAllCompaniesForAdmin() {
         List<Company> companyList =companyRepository.findAll();
